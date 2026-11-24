@@ -220,10 +220,10 @@ struct OscPanel : public Panel, private juce::Timer
         warp = add<ParamChoice> (*this, owned, proc, pre + "warp");
         warpSrc = add<ParamChoice> (*this, owned, proc, pre + "warp_src");
         route = add<ParamChoice> (*this, owned, proc, pre + "route");
-        const char* ids[] = { "pos", "warp_amt", "uni", "detune", "blend", "width", "uni_warp", "oct", "semi", "fine", "coarse", "phase", "rand", "level", "pan" };
-        const char* names[] = { "WT Pos", "Warp", "Unison", "Detune", "Blend", "Width", "U.Warp", "Oct", "Semi", "Fine", "Pitch", "Phase", "Rand", "Level", "Pan" };
+        const char* ids[] = { "pos", "warp_amt", "uni", "detune", "blend", "level", "pan", "width", "uni_warp", "phase", "oct", "semi", "fine", "coarse", "rand" };
+        const char* names[] = { "WT Pos", "Warp", "Unison", "Detune", "Blend", "Level", "Pan", "Width", "U.Warp", "Phase", "Oct", "Semi", "Fine", "Pitch", "Rand" };
         for (int k = 0; k < 15; ++k)
-            knobs.add (add<Knob> (*this, owned, proc, pre + ids[k], names[k], k < 7 ? theme::get().cyan : theme::get().pink));
+            knobs.add (add<Knob> (*this, owned, proc, pre + ids[k], names[k], k < 5 ? theme::get().cyan : (k < 10 ? theme::get().pink : theme::get().teal)));
         startTimerHz (5);
         syncTable();
     }
@@ -263,14 +263,16 @@ struct OscPanel : public Panel, private juce::Timer
         onBtn->setBounds (head.removeFromLeft (64));
         tableBox->setBounds (head);
         r.removeFromTop (3);
-        display->setBounds (r.removeFromTop (46));
+        display->setBounds (r.removeFromTop (34));
         r.removeFromTop (3);
         layoutRow (r.removeFromTop (20), { warp, warpSrc, route }, 3);
-        const int rowH = r.getHeight() / 2;
-        auto row1 = r.removeFromTop (rowH), row2 = r;
-        const int w1 = row1.getWidth() / 7, w2 = row2.getWidth() / 8;
-        for (int k = 0; k < 7; ++k) knobs[k]->setBounds (row1.removeFromLeft (w1));
-        for (int k = 7; k < 15; ++k) knobs[k]->setBounds (row2.removeFromLeft (w2));
+        const int rowH = r.getHeight() / 3;
+        for (int row = 0; row < 3; ++row)
+        {
+            auto line = r.removeFromTop (rowH);
+            const int w = line.getWidth() / 5;
+            for (int k = 0; k < 5; ++k) knobs[row * 5 + k]->setBounds (line.removeFromLeft (w));
+        }
     }
 
     BassGodsProcessor& proc;
@@ -782,7 +784,7 @@ struct MatrixPanel : public Panel
         collapse.onClick = [onCollapse] { if (onCollapse) onCollapse(); };
         const ModSource extra[] = { ModSource::Velocity, ModSource::NoteRandom, ModSource::KeyTrack, ModSource::ModWheel, ModSource::PitchBend,
                                     ModSource::Aftertouch, ModSource::MpeSlide, ModSource::MpePressure, ModSource::Noise };
-        const char* names[] = { "VEL", "RND", "KEY", "MW", "PB", "AT", "SLIDE", "PRES", "NOISE" };
+        const char* names[] = { "VEL", "RND", "KEY", "MW", "PB", "AT", "SLD", "PRS", "NSE" };
         for (int i = 0; i < 9; ++i)
         {
             auto* c = chips.add (new ModSourceChip ((int) extra[i], names[i]));

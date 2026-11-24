@@ -1167,11 +1167,17 @@ void ClubRenderer::drawHands (juce::Graphics& g, juce::Rectangle<float> r, const
     if (activeProgress (f, rx::HeadphonePose) >= 0.0f)
     {
         // right hand holds one headphone cup to your ear (top-right of view)
-        hand (X + W * 0.93f, Y + H * 0.3f, -0.5f, false, 1.3f);
+        const float cx = X + W * 0.955f, cy = Y + H * 0.42f;
+        hand (cx - W * 0.01f, cy + H * 0.12f, -0.35f, false, 0.9f);
+        juce::Path band;
+        band.startNewSubPath (cx + W * 0.02f, cy - H * 0.02f);
+        band.quadraticTo (cx + W * 0.01f, cy - H * 0.3f, cx + W * 0.06f, cy - H * 0.38f);
+        g.setColour (Colour (0xff1a1a22));
+        g.strokePath (band, juce::PathStrokeType (H * 0.025f));
         g.setColour (Colour (0xff101014));
-        g.fillEllipse (X + W * 0.9f, Y + H * 0.12f, W * 0.08f, H * 0.18f);
+        g.fillEllipse (cx - W * 0.012f, cy - H * 0.06f, W * 0.04f, H * 0.11f);
         g.setColour (lookFor (f.personality).beamA);
-        g.drawEllipse (X + W * 0.9f, Y + H * 0.12f, W * 0.08f, H * 0.18f, 2.0f);
+        g.drawEllipse (cx - W * 0.012f, cy - H * 0.06f, W * 0.04f, H * 0.11f, 1.5f);
     }
     else
         hand (hrX, hrY, hrRot, rFist, 1.0f);

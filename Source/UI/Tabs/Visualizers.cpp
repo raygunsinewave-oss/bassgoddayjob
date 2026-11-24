@@ -91,7 +91,7 @@ struct SpectrumViz : public VizPanel
         // peak note readout
         float best = -200.0f; size_t bi = 0;
         for (size_t i = 1; i < post.size(); ++i) if (post[i] > best) { best = post[i]; bi = i; }
-        peakHz = (float) bi * (float) analysis.getSampleRate() / (float) (post.size() * 2);
+        peakHz = best > -80.0f ? (float) bi * (float) analysis.getSampleRate() / (float) (post.size() * 2) : 0.0f;
     }
     void drawCurve (juce::Graphics& g, juce::Rectangle<float> a, const std::vector<float>& s, juce::Colour c, bool fill)
     {
@@ -135,7 +135,8 @@ struct SpectrumViz : public VizPanel
         const auto note = AnalysisData::noteName (peakHz, cents);
         g.setColour (P().text);
         g.setFont (theme::mono (12.0f));
-        g.drawText ("Peak " + juce::String (peakHz, 1) + " Hz  " + note + " " + (cents >= 0 ? "+" : "") + juce::String (juce::roundToInt (cents)) + "c", a.reduced (4.0f), juce::Justification::topLeft);
+        g.drawText (peakHz > 0.0f ? "Peak " + juce::String (peakHz, 1) + " Hz  " + note + " " + (cents >= 0 ? "+" : "") + juce::String (juce::roundToInt (cents)) + "c"
+                                  : juce::String ("No signal"), a.reduced (4.0f), juce::Justification::topLeft);
     }
     juce::ComboBox size, slope;
     juce::ToggleButton peak, prePost;
@@ -386,7 +387,8 @@ struct SubCheckViz : public VizPanel
         g.setFont (theme::mono (12.0f));
         g.drawText (juce::String (db, 1) + " dB", bar.withTrimmedBottom (4.0f), juce::Justification::centredBottom);
 
-        const bool warn = corr < 0.9f && db > -50.0f;
+        const bool silent = db < -60.0f;
+        const bool warn = corr < 0.9f && ! silent;
         auto led = a.removeFromTop (a.getHeight() * 0.5f).withSizeKeepingCentre (36.0f, 36.0f);
         g.setColour ((warn ? P().warn : P().good).withAlpha (0.3f));
         g.fillEllipse (led.expanded (6.0f));
@@ -394,8 +396,8 @@ struct SubCheckViz : public VizPanel
         g.fillEllipse (led);
         g.setColour (P().text);
         g.setFont (theme::font (12.0f, true));
-        g.drawFittedText (warn ? "Sub is NOT mono!\ncorrelation " + juce::String (corr, 2)
-                               : "Sub mono OK\ncorrelation " + juce::String (corr, 2), a.removeFromTop (40.0f).toNearestInt(), juce::Justification::centred, 2);
+        g.drawFittedText (silent ? juce::String ("No sub signal") : (warn ? "Sub is NOT mono!\ncorrelation " + juce::String (corr, 2)
+                                                                    : "Sub mono OK\ncorrelation " + juce::String (corr, 2)), a.removeFromTop (40.0f).toNearestInt(), juce::Justification::centred, 2);
         g.setColour (P().textDim);
         g.setFont (theme::font (11.0f));
         g.drawFittedText (monoOn ? "Bass Mono Below: " + juce::String (juce::roundToInt (monoBelow)) + " Hz (on)" : juce::String ("Bass Mono Below is OFF"),

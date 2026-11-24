@@ -79,7 +79,7 @@ void VisualizerTab::resized()
         }
     };
     layoutRow (rowA.getBounds(), { { panels[0].get(), 0.45f }, { panels[1].get(), 0.3f }, { panels[3].get(), 0.25f } });
-    layoutRow (rowB.getBounds(), { { panels[2].get(), 0.32f }, { panels[4].get(), 0.24f }, { panels[5].get(), 0.14f }, { panels[6].get(), 0.3f } });
+    layoutRow (rowB.getBounds(), { { panels[2].get(), 0.3f }, { panels[4].get(), 0.23f }, { panels[5].get(), 0.19f }, { panels[6].get(), 0.28f } });
     layoutRow (rowC.getBounds(), { { panels[7].get(), 0.25f }, { panels[8].get(), 0.5f }, { panels[9].get(), 0.25f } });
 }
 } // namespace bgdj

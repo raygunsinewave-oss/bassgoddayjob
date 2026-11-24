@@ -127,8 +127,8 @@ void Knob::paint (juce::Graphics& g)
     const auto& p = theme::get();
     auto r = getLocalBounds().toFloat();
     g.setColour (p.textDim);
-    g.setFont (theme::font (10.5f, true));
-    g.drawFittedText (labelText.toUpperCase(), r.removeFromBottom (13.0f).toNearestInt(), juce::Justification::centred, 1);
+    g.setFont (theme::font (getWidth() < 46 ? 9.0f : 10.5f, true));
+    g.drawFittedText (labelText.toUpperCase(), r.removeFromBottom (13.0f).toNearestInt(), juce::Justification::centred, 1, 0.75f);
     if (ccText.isNotEmpty())
     {
         g.setColour (p.yellow);
@@ -241,10 +241,12 @@ void ModSourceChip::paint (juce::Graphics& g)
     g.fillRoundedRectangle (r, r.getHeight() * 0.5f);
     g.setColour (c);
     g.drawRoundedRectangle (r, r.getHeight() * 0.5f, 1.2f);
-    g.fillEllipse (r.getX() + 4.0f, r.getCentreY() - 3.0f, 6.0f, 6.0f);
+    const bool narrow = r.getWidth() < 44.0f;
+    if (! narrow)
+        g.fillEllipse (r.getX() + 4.0f, r.getCentreY() - 3.0f, 6.0f, 6.0f);
     g.setColour (theme::get().text);
-    g.setFont (theme::font (10.5f, true));
-    g.drawText (text, r.withTrimmedLeft (12.0f), juce::Justification::centred);
+    g.setFont (theme::font (narrow ? 9.0f : 10.5f, true));
+    g.drawFittedText (text, r.withTrimmedLeft (narrow ? 2.0f : 12.0f).toNearestInt(), juce::Justification::centred, 1, 0.8f);
 }
 
 void ModSourceChip::mouseDrag (const juce::MouseEvent&)

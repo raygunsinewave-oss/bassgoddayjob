@@ -258,6 +258,8 @@ void CreditsTab::paint (juce::Graphics& g)
     const float w = std::min (760.0f, (float) getWidth() - 80.0f);
     const float x0 = c.x - w * 0.5f;
     wakeRect = {};
+    g.saveState();   // keep the scrolling text above the control bar
+    g.reduceClipRegion (getLocalBounds().withTrimmedBottom (52));
     for (size_t i = 0; i < items.size(); ++i)
     {
         const float y = itemY[i] - scroll;
@@ -273,17 +275,21 @@ void CreditsTab::paint (juce::Graphics& g)
         auto area = juce::Rectangle<float> (x0, y, w, itemH[i]);
         if (it.style == Style::Title)
         {
-            g.setColour (p.magenta.withAlpha (0.25f + 0.25f * pulse));
-            g.fillEllipse (area.withSizeKeepingCentre (w * 0.8f, itemH[i] * 0.6f));
+            const auto glow = area.getCentre();
+            g.setGradientFill (juce::ColourGradient (p.magenta.withAlpha (0.35f + 0.25f * pulse), glow.x, glow.y,
+                                                     p.magenta.withAlpha (0.0f), glow.x + w * 0.45f, glow.y, true));
+            g.fillEllipse (area.withSizeKeepingCentre (w * 0.9f, itemH[i] * 1.4f));
         }
         // fade at top and bottom edges
-        const float fade = juce::jlimit (0.0f, 1.0f, std::min (y / 80.0f, ((float) getHeight() - 40.0f - y) / 80.0f));
+        const float fade = juce::jlimit (0.0f, 1.0f, std::min (y / 80.0f, ((float) getHeight() - 70.0f - y) / 90.0f));
         g.setOpacity (fade);
         tl.draw (g, area);
         g.setOpacity (1.0f);
         if (it.style == Style::WakeUp)
             wakeRect = area.withSizeKeepingCentre (220.0f, itemH[i]);
     }
+
+    g.restoreState();
 
     // Grey the cat
     if (catState > 0)
