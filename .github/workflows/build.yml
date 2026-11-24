@@ -107,6 +107,29 @@ jobs:
           if [ -n "$MACOS_CERT_P12_BASE64" ]; then installer/macos/import_certificates.sh; fi
           installer/macos/build_pkg.sh "${{ steps.art.outputs.dir }}" dist
 
+      - name: macOS easy-install zip (AU + VST3 + app)
+        if: ${{ !cancelled() && runner.os == 'macOS' }}
+        run: |
+          ART="${{ steps.art.outputs.dir }}"
+          Z=zipstage/BASSGODSDAYJOB-macOS
+          mkdir -p "$Z" dist
+          cp -R "$ART/AU/BASSGODSDAYJOB.component" "$ART/VST3/BASSGODSDAYJOB.vst3" "$ART/Standalone/BASSGODSDAYJOB.app" "$Z/"
+          for b in "$Z"/*.component "$Z"/*.vst3 "$Z"/*.app; do
+            if [ -n "${{ secrets.MACOS_DEV_ID_APP }}" ]; then codesign --force --deep --options runtime --timestamp --sign "${{ secrets.MACOS_DEV_ID_APP }}" "$b"; else codesign --force --deep --sign - "$b"; fi
+          done
+          cp installer/macos/zip/* "$Z/"
+          chmod +x "$Z"/*.command
+          lipo -info "$Z/BASSGODSDAYJOB.app/Contents/MacOS/BASSGODSDAYJOB"
+          (cd zipstage && ditto -c -k --keepParent BASSGODSDAYJOB-macOS ../dist/BASSGODSDAYJOB-macOS.zip)
+          ls -la dist
+
+      - name: Upload macOS zip
+        if: ${{ !cancelled() && runner.os == 'macOS' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: BASSGODSDAYJOB-macOS-zip
+          path: dist/BASSGODSDAYJOB-macOS.zip
+
       - name: Windows installer (Inno Setup)
         if: runner.os == 'Windows'
         shell: pwsh
