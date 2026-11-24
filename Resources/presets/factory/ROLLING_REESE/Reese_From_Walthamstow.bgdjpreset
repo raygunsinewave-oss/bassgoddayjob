@@ -1,0 +1,118 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Reese From Walthamstow",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Liquid.",
+ "tags": {
+  "genre": "Liquid",
+  "character": "reese",
+  "key": "Dm",
+  "bpm": 174,
+  "extra": [
+   "punchy"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Saw",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3851,
+  "bassmono_on": true,
+  "bassmono_freq": 100.4782,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 5,
+  "oA_detune": 0.3259,
+  "oA_blend": 0.8029,
+  "oA_width": 0.57,
+  "oA_pos": 0.2692,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.16,
+  "oB_fine": -4.8997,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5337,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Dirty LP 24",
+  "f1_cutoff": 1260.0682,
+  "f1_reso": 0.3001,
+  "f1_drive": 0.1556,
+  "f1_fat": 0.2576,
+  "f1_key": 0.0,
+  "e1_att": 1.9461,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 145.0364,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 49.1306,
+  "l1_sync": true,
+  "l1_sync_rate": "1 Bar",
+  "l1_mode": "Free",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.0658,
+  "fx_mod_depth": 0.5857,
+  "fx_mod_mix": 0.2987
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.3868,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.1245,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

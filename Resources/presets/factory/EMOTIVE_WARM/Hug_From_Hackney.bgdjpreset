@@ -1,0 +1,103 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Hug From Hackney",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Pluck bass for Lo-Fi House.",
+ "tags": {
+  "genre": "Lo-Fi House",
+  "character": "pluck",
+  "key": "Am",
+  "bpm": 118,
+  "extra": [
+   "rolling"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Tape Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.262,
+  "bassmono_on": true,
+  "bassmono_freq": 140.4986,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 2,
+  "oA_detune": 0.1715,
+  "oA_pos": 0.3204,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.514,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 1542.7891,
+  "f1_reso": 0.2211,
+  "f1_drive": 0.0,
+  "f1_fat": 0.2128,
+  "f1_key": 0.0,
+  "e1_att": 6.1034,
+  "e1_dec": 600,
+  "e1_sus": 0.6051,
+  "e1_rel": 369.1209,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.3804,
+  "fx_sat_warmth": 0.7124,
+  "fx_sat_wow": 0.0991,
+  "fx_sat_flutter": 0.0039,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Soft",
+  "fx_duck_depth": 0.7564,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.551,
+  "fx_verb_decay": 1.4876,
+  "fx_verb_mix": 0.0967,
+  "drift": 0.2002
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

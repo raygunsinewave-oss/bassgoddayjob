@@ -1,0 +1,113 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Bank Holiday Tower Block",
+ "bank": "TECH HOUSE RUBBER",
+ "author": "Raygun",
+ "description": "Rubber bass for Deep Tech.",
+ "tags": {
+  "genre": "Deep Tech",
+  "character": "rubber",
+  "key": "C",
+  "bpm": 126,
+  "extra": [
+   "bouncy",
+   "mono"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Pluck Length",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Rubber 2"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2276,
+  "bassmono_on": true,
+  "bassmono_freq": 113.3168,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.5376,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4102,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 367.7076,
+  "f1_reso": 0.2271,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.3,
+  "e1_dec": 351.3142,
+  "e1_sus": 0.2849,
+  "e1_rel": 51.579,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5205,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 230.3768,
+  "e2_sus": 0.0,
+  "e2_rel": 80,
+  "porta_time": 17.1585,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Hard",
+  "fx_duck_depth": 0.524
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.4172
+  },
+  {
+   "src": "Env 2",
+   "dst": "oA_pos",
+   "amount": 0.1249
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.1388
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e2_dec",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

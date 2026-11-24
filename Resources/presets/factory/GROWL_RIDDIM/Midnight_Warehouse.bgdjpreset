@@ -1,0 +1,152 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Midnight Warehouse",
+ "bank": "GROWL & RIDDIM",
+ "author": "Raygun",
+ "description": "Growl bass for Dubstep.",
+ "tags": {
+  "genre": "Dubstep",
+  "character": "growl",
+  "key": "D#m",
+  "bpm": 140,
+  "extra": [
+   "dirty",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Wobble Rate",
+  "Space"
+ ],
+ "tables": {
+  "A": "Talkbox",
+  "B": "Vowel Talk"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.4339,
+  "bassmono_on": true,
+  "bassmono_freq": 119.0311,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 3,
+  "oA_detune": 0.1025,
+  "oA_pos": 0.2863,
+  "oA_warp": "Bend +/-",
+  "oA_warp_amt": 0.2129,
+  "oB_on": true,
+  "oB_level": 0.45,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_semi": 0,
+  "oB_oct": 0,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5908,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Comb +",
+  "f1_cutoff": 2016.4186,
+  "f1_reso": 0.556,
+  "f1_drive": 0.3524,
+  "f1_fat": 0.4047,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 400,
+  "e1_sus": 1.0,
+  "e1_rel": 50.9955,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l1_shape": "Custom",
+  "l1_sync": true,
+  "l1_sync_rate": "1/4 D",
+  "l1_mode": "Trigger",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Diode",
+  "fx_dist_drive": 0.4397,
+  "fx_dist_mix": 0.9537,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.6381,
+  "fx_dist_mb_high": 0.5628,
+  "fx_ott_on": true,
+  "fx_ott_depth": 0.6334,
+  "fx_ott_mix": 0.3534,
+  "porta_time": 57.7831
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.5684
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4353
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "l1_rate",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ],
+ "lfo_shapes": {
+  "1": [
+   [
+    0,
+    0.2,
+    0
+   ],
+   [
+    0.25,
+    0.9,
+    -0.5
+   ],
+   [
+    0.5,
+    0.4,
+    0.2
+   ],
+   [
+    0.75,
+    1.0,
+    -0.3
+   ],
+   [
+    1,
+    0.2,
+    0.4
+   ]
+  ]
+ }
+}

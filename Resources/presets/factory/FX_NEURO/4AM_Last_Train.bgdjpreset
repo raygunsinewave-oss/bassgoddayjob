@@ -1,0 +1,106 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "4AM Last Train",
+ "bank": "FX & NEURO",
+ "author": "Raygun",
+ "description": "Fm bass for Drum & Bass.",
+ "tags": {
+  "genre": "Drum & Bass",
+  "character": "FM",
+  "key": "D#m",
+  "bpm": 173,
+  "extra": [
+   "clean",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Chaos",
+  "Space"
+ ],
+ "tables": {
+  "A": "Bell"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2702,
+  "bassmono_on": true,
+  "bassmono_freq": 115.7955,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.6,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "e1_att": 0.1,
+  "e1_dec": 945.3604,
+  "e1_sus": 0.0,
+  "e1_rel": 300,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.7,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.1,
+  "e2_dec": 526.5988,
+  "e2_sus": 0.0,
+  "e2_rel": 100,
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 4000.0,
+  "f1_reso": 0.2,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Hard Clip",
+  "fx_dist_drive": 0.5,
+  "fx_dist_mix": 0.6,
+  "fx_verb_on": true,
+  "fx_verb_type": "Club",
+  "fx_verb_size": 0.6,
+  "fx_verb_decay": 2.0,
+  "fx_verb_mix": 0.2
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "oA_coarse",
+   "amount": 0.1969
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_warp_amt",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

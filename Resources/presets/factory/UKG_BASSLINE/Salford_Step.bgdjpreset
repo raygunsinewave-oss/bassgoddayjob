@@ -1,0 +1,108 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Salford Step",
+ "bank": "UKG & BASSLINE",
+ "author": "Raygun",
+ "description": "Organ bass for UK Garage.",
+ "tags": {
+  "genre": "UK Garage",
+  "character": "organ",
+  "key": "Bm",
+  "bpm": 133,
+  "extra": [
+   "bright",
+   "dirty"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Stab Length",
+  "Space"
+ ],
+ "tables": {
+  "A": "Garage Organ 4"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2462,
+  "bassmono_on": true,
+  "bassmono_freq": 130.1124,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.1874,
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 3819.9377,
+  "f1_reso": 0.1054,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 317.6448,
+  "e1_sus": 0.319,
+  "e1_rel": 48.3822,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.5,
+  "e2_dec": 183.7677,
+  "e2_sus": 0.0,
+  "e2_rel": 80,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3922,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "porta_time": 26.0424,
+  "porta_mode": "Legato",
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Soft",
+  "fx_duck_depth": 0.4485,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.2135,
+  "fx_dist_mix": 0.5662
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.2174
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e2_dec",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

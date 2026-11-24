@@ -1,0 +1,126 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Lewisham Bus Stop Drift",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Liquid.",
+ "tags": {
+  "genre": "Liquid",
+  "character": "reese",
+  "key": "Em",
+  "bpm": 174,
+  "extra": [
+   "bouncy",
+   "mono"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Supersaw Stack",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1992,
+  "bassmono_on": true,
+  "bassmono_freq": 111.1803,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 5,
+  "oA_detune": 0.4304,
+  "oA_blend": 0.6205,
+  "oA_width": 0.5499,
+  "oA_pos": 0.1637,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.2248,
+  "oB_fine": 7.5653,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4069,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 1383.5006,
+  "f1_reso": 0.2665,
+  "f1_drive": 0.2984,
+  "f1_fat": 0.3725,
+  "f1_key": 0.0,
+  "e1_att": 0.6652,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 135.5973,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 74.3971,
+  "l1_sync": true,
+  "l1_sync_rate": "1 Bar",
+  "l1_mode": "Free",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.2181,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.4375,
+  "fx_dist_mb_high": 0.3816,
+  "fx_dist_mix": 0.7865,
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.1522,
+  "fx_mod_depth": 0.489,
+  "fx_mod_mix": 0.2806
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.2595,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.1488,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

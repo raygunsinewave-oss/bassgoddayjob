@@ -1,0 +1,110 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Ribcage Rattle",
+ "bank": "SUB & 808",
+ "author": "Raygun",
+ "description": "Sub bass for Garage.",
+ "tags": {
+  "genre": "Garage",
+  "character": "sub",
+  "key": "D#m",
+  "bpm": 133,
+  "extra": [
+   "bright",
+   "tight"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Decay",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sub Harmonic"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.4496,
+  "bassmono_on": true,
+  "bassmono_freq": 144.7796,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.1235,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.2625,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 3199.8972,
+  "f1_reso": 0.1,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.8042,
+  "e1_dec": 2283.0773,
+  "e1_sus": 0.2062,
+  "e1_rel": 282.9721,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.4844,
+  "e1_rcurve": 0.6,
+  "porta_time": 183.4465,
+  "porta_mode": "Always",
+  "e2_att": 0.5,
+  "e2_dec": 105.3884,
+  "e2_sus": 0.0,
+  "e2_rel": 60,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.3762,
+  "fx_dist_mix": 0.6003,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.7283,
+  "fx_dist_mb_high": 0.2016,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.207,
+  "fx_sat_warmth": 0.3636
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "oA_coarse",
+   "amount": 0.1518
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_dec",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

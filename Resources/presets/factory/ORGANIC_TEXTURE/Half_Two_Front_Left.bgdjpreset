@@ -1,0 +1,124 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Half Two Front Left",
+ "bank": "ORGANIC / TEXTURE",
+ "author": "Raygun",
+ "description": "Texture bass for Experimental.",
+ "tags": {
+  "genre": "Experimental",
+  "character": "texture",
+  "key": "Dm",
+  "bpm": 105,
+  "extra": [
+   "bright",
+   "clean"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Texture",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Random Harmonics"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2843,
+  "bassmono_on": true,
+  "bassmono_freq": 101.7452,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.6105,
+  "oA_rand": 1.0,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 29,
+  "oD_level": 0.1799,
+  "oD_noise_key": false,
+  "oD_route": "Filter 1",
+  "f1_on": true,
+  "f1_type": "BP 12",
+  "f1_cutoff": 2445.1479,
+  "f1_reso": 0.2879,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "f2_on": true,
+  "f2_type": "HP 12",
+  "f2_cutoff": 41.5284,
+  "f2_reso": 0.0,
+  "f2_drive": 0.0,
+  "f2_fat": 0.0,
+  "f2_key": 0.0,
+  "e1_att": 16.3588,
+  "e1_dec": 781.6089,
+  "e1_sus": 0.358,
+  "e1_rel": 332.3219,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "drift": 0.7796,
+  "l3_sync": false,
+  "l3_rate": 0.3826,
+  "l3_shape": "Smooth Random",
+  "l3_mode": "Free",
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.2247,
+  "fx_sat_warmth": 0.6,
+  "fx_sat_wow": 0.4871,
+  "fx_sat_flutter": 0.2225,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Tape",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/4",
+  "fx_delay_sync_r": "1/4 D",
+  "fx_delay_feedback": 0.4286,
+  "fx_delay_wow": 0.4,
+  "fx_delay_mix": 0.1472
+ },
+ "matrix": [
+  {
+   "src": "LFO 3",
+   "dst": "oA_pos",
+   "amount": 0.2056
+  },
+  {
+   "src": "Note Random",
+   "dst": "f1_cutoff",
+   "amount": 0.0921
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oD_level",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

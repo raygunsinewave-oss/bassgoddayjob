@@ -1,0 +1,100 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Closing Time Boom",
+ "bank": "SUB & 808",
+ "author": "Raygun",
+ "description": "Sub bass for Drill.",
+ "tags": {
+  "genre": "Drill",
+  "character": "sub",
+  "key": "G#m",
+  "bpm": 141,
+  "extra": [
+   "dirty",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Decay",
+  "Space"
+ ],
+ "tables": {
+  "A": "Dirty Sub"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3971,
+  "bassmono_on": true,
+  "bassmono_freq": 138.1515,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.5727,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.2351,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 4223.9756,
+  "f1_reso": 0.1,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5514,
+  "e1_dec": 1047.8794,
+  "e1_sus": 0.0411,
+  "e1_rel": 375.4937,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.6221,
+  "e1_rcurve": 0.6,
+  "porta_time": 212.6527,
+  "porta_mode": "Always",
+  "e2_att": 0.5,
+  "e2_dec": 101.4429,
+  "e2_sus": 0.0,
+  "e2_rel": 60
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "oA_coarse",
+   "amount": 0.1426
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_dec",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

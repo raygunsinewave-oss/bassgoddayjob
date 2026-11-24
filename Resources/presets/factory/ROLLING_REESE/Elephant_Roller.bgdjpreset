@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Elephant Roller",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Drum & Bass.",
+ "tags": {
+  "genre": "Drum & Bass",
+  "character": "reese",
+  "key": "F#m",
+  "bpm": 174,
+  "extra": [
+   "clean",
+   "dark"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Reese Stack 5",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2573,
+  "bassmono_on": true,
+  "bassmono_freq": 141.6026,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 5,
+  "oA_detune": 0.3571,
+  "oA_blend": 0.665,
+  "oA_width": 0.6939,
+  "oA_pos": 0.1718,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.2417,
+  "oB_fine": -3.393,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5952,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 894.1926,
+  "f1_reso": 0.2088,
+  "f1_drive": 0.1707,
+  "f1_fat": 0.3249,
+  "f1_key": 0.0,
+  "e1_att": 4.7872,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 202.3212,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 56.5072,
+  "l1_sync": true,
+  "l1_sync_rate": "1/2",
+  "l1_mode": "Free",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.2887,
+  "fx_mod_depth": 0.3365,
+  "fx_mod_mix": 0.3334
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.4792,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.067,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Spin From Manchester",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Drum & Bass.",
+ "tags": {
+  "genre": "Drum & Bass",
+  "character": "reese",
+  "key": "Gm",
+  "bpm": 175,
+  "extra": [
+   "lush",
+   "mono"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Reese Stack 3",
+  "B": "Reese Stack 1"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2955,
+  "bassmono_on": true,
+  "bassmono_freq": 126.099,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 7,
+  "oA_detune": 0.339,
+  "oA_blend": 0.6054,
+  "oA_width": 0.5747,
+  "oA_pos": 0.0729,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.2425,
+  "oB_fine": 6.1129,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4363,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 751.812,
+  "f1_reso": 0.2119,
+  "f1_drive": 0.1107,
+  "f1_fat": 0.4983,
+  "f1_key": 0.0,
+  "e1_att": 9.5357,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 243.926,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 25.7454,
+  "l1_sync": true,
+  "l1_sync_rate": "1 Bar",
+  "l1_mode": "Free",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.3343,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.5409,
+  "fx_dist_mb_high": 0.2727,
+  "fx_dist_mix": 0.6372,
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.1613,
+  "fx_mod_depth": 0.332,
+  "fx_mod_mix": 0.255
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.2739,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.119,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

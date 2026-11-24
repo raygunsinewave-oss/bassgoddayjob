@@ -1,0 +1,124 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "4AM Pirate Radio",
+ "bank": "ORGANIC / TEXTURE",
+ "author": "Raygun",
+ "description": "Texture bass for Broken Beat.",
+ "tags": {
+  "genre": "Broken Beat",
+  "character": "texture",
+  "key": "C#",
+  "bpm": 124,
+  "extra": [
+   "gritty",
+   "mono"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Texture",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Hollow Pipe"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2674,
+  "bassmono_on": true,
+  "bassmono_freq": 110.4053,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.1392,
+  "oA_rand": 1.0,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 28,
+  "oD_level": 0.2223,
+  "oD_noise_key": true,
+  "oD_route": "Filter 1",
+  "f1_on": true,
+  "f1_type": "Formant Vowel",
+  "f1_cutoff": 962.8143,
+  "f1_reso": 0.2986,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "f2_on": true,
+  "f2_type": "HP 12",
+  "f2_cutoff": 50.4741,
+  "f2_reso": 0.0,
+  "f2_drive": 0.0,
+  "f2_fat": 0.0,
+  "f2_key": 0.0,
+  "e1_att": 24.5245,
+  "e1_dec": 635.4744,
+  "e1_sus": 0.6035,
+  "e1_rel": 360.6111,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "drift": 0.493,
+  "l3_sync": false,
+  "l3_rate": 0.0793,
+  "l3_shape": "Smooth Random",
+  "l3_mode": "Free",
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.129,
+  "fx_sat_warmth": 0.6,
+  "fx_sat_wow": 0.4531,
+  "fx_sat_flutter": 0.1971,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Tape",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/4",
+  "fx_delay_sync_r": "1/4 D",
+  "fx_delay_feedback": 0.3499,
+  "fx_delay_wow": 0.4,
+  "fx_delay_mix": 0.1203
+ },
+ "matrix": [
+  {
+   "src": "LFO 3",
+   "dst": "oA_pos",
+   "amount": 0.2519
+  },
+  {
+   "src": "Note Random",
+   "dst": "f1_cutoff",
+   "amount": 0.0535
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oD_level",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

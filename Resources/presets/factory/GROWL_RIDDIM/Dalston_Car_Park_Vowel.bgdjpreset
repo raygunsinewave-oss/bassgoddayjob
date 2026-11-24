@@ -1,0 +1,142 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Dalston Car Park Vowel",
+ "bank": "GROWL & RIDDIM",
+ "author": "Raygun",
+ "description": "Wobble bass for Riddim.",
+ "tags": {
+  "genre": "Riddim",
+  "character": "wobble",
+  "key": "Am",
+  "bpm": 142,
+  "extra": [
+   "aggressive",
+   "playful"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Wobble Rate",
+  "Space"
+ ],
+ "tables": {
+  "A": "Growl 3",
+  "B": "Vowel Talk"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3377,
+  "bassmono_on": true,
+  "bassmono_freq": 145.4389,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 1,
+  "oA_detune": 0.1332,
+  "oA_pos": 0.2004,
+  "oA_warp": "Off",
+  "oA_warp_amt": 0.1287,
+  "oB_on": true,
+  "oB_level": 0.45,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_semi": 0,
+  "oB_oct": 0,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5942,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 442.7988,
+  "f1_reso": 0.4256,
+  "f1_drive": 0.2645,
+  "f1_fat": 0.3102,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 400,
+  "e1_sus": 1.0,
+  "e1_rel": 100.6087,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l1_shape": "Custom",
+  "l1_sync": true,
+  "l1_sync_rate": "1/8",
+  "l1_mode": "Trigger",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Hard Clip",
+  "fx_dist_drive": 0.619,
+  "fx_dist_mix": 0.6674,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.6708,
+  "fx_dist_mb_high": 0.4996,
+  "fx_ott_on": true,
+  "fx_ott_depth": 0.7915,
+  "fx_ott_mix": 0.5896,
+  "porta_time": 33.0377
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.5073
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.3371
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "l1_rate",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ],
+ "lfo_shapes": {
+  "1": [
+   [
+    0,
+    0.1,
+    0
+   ],
+   [
+    0.3,
+    1,
+    -0.7
+   ],
+   [
+    1,
+    0.1,
+    0.7
+   ]
+  ]
+ }
+}

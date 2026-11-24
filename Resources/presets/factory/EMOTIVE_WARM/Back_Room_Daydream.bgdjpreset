@@ -1,0 +1,104 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Back Room Daydream",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Warm bass for Emotive House.",
+ "tags": {
+  "genre": "Emotive House",
+  "character": "warm",
+  "key": "A#m",
+  "bpm": 128,
+  "extra": [
+   "bright",
+   "dirty"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Velvet Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3327,
+  "bassmono_on": true,
+  "bassmono_freq": 148.4964,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 1,
+  "oA_detune": 0.1627,
+  "oA_pos": 0.2934,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4709,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 1342.7451,
+  "f1_reso": 0.1854,
+  "f1_drive": 0.0,
+  "f1_fat": 0.4603,
+  "f1_key": 0.0,
+  "e1_att": 21.8608,
+  "e1_dec": 600,
+  "e1_sus": 0.6429,
+  "e1_rel": 390.6585,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.2061,
+  "fx_sat_warmth": 0.6345,
+  "fx_sat_wow": 0.1238,
+  "fx_sat_flutter": 0.025,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Long Pump",
+  "fx_duck_depth": 0.6969,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.4274,
+  "fx_verb_decay": 1.4055,
+  "fx_verb_mix": 0.1694,
+  "drift": 0.1657
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

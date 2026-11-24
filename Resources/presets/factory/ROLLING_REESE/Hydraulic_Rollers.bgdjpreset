@@ -1,0 +1,129 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Hydraulic Rollers",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Minimal Tech.",
+ "tags": {
+  "genre": "Minimal Tech",
+  "character": "reese",
+  "key": "D#m",
+  "bpm": 128,
+  "extra": [
+   "dirty",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Supersaw Stack",
+  "B": "Tube Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1546,
+  "bassmono_on": true,
+  "bassmono_freq": 125.7478,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 2,
+  "oA_detune": 0.4311,
+  "oA_blend": 0.6196,
+  "oA_width": 0.7957,
+  "oA_pos": 0.3728,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.2448,
+  "oB_fine": 1.3485,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4933,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 897.1058,
+  "f1_reso": 0.1661,
+  "f1_drive": 0.2339,
+  "f1_fat": 0.4316,
+  "f1_key": 0.0,
+  "e1_att": 9.4771,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 127.7488,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 23.0183,
+  "l1_sync": true,
+  "l1_sync_rate": "1 Bar",
+  "l1_mode": "Free",
+  "fx_ott_on": true,
+  "fx_ott_depth": 0.5596,
+  "fx_ott_mix": 0.3536,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.2543,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.5322,
+  "fx_dist_mb_high": 0.3382,
+  "fx_dist_mix": 0.7439,
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.1394,
+  "fx_mod_depth": 0.3237,
+  "fx_mod_mix": 0.2027
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.4709,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.0672,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Nottingham Step",
+ "bank": "UKG & BASSLINE",
+ "author": "Raygun",
+ "description": "Organ bass for Speed Garage.",
+ "tags": {
+  "genre": "Speed Garage",
+  "character": "organ",
+  "key": "F#",
+  "bpm": 134,
+  "extra": [
+   "dark",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Stab Length",
+  "Space"
+ ],
+ "tables": {
+  "A": "Garage Organ 3"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3112,
+  "bassmono_on": true,
+  "bassmono_freq": 108.9038,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.6452,
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 1577.3292,
+  "f1_reso": 0.1284,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 277.1172,
+  "e1_sus": 0.4395,
+  "e1_rel": 93.8832,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.5,
+  "e2_dec": 171.1992,
+  "e2_sus": 0.0,
+  "e2_rel": 80,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3809,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "porta_time": 67.5632,
+  "porta_mode": "Legato",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.1886,
+  "fx_dist_mix": 0.5148
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.2373
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e2_dec",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

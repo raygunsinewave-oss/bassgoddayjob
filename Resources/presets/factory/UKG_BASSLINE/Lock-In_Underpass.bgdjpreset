@@ -1,0 +1,138 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Lock-In Underpass",
+ "bank": "UKG & BASSLINE",
+ "author": "Raygun",
+ "description": "Wobble bass for Bassline.",
+ "tags": {
+  "genre": "Bassline",
+  "character": "wobble",
+  "key": "Em",
+  "bpm": 140,
+  "extra": [
+   "bright",
+   "lush"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Wobble Speed",
+  "Space"
+ ],
+ "tables": {
+  "A": "Square"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1949,
+  "bassmono_on": true,
+  "bassmono_freq": 140.4576,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.4275,
+  "f1_on": true,
+  "f1_type": "Dirty LP 12",
+  "f1_cutoff": 381.2186,
+  "f1_reso": 0.5016,
+  "f1_drive": 0.1278,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 400,
+  "e1_sus": 1.0,
+  "e1_rel": 80,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l1_shape": "Custom",
+  "l1_sync": true,
+  "l1_sync_rate": "1/8 D",
+  "l1_mode": "Trigger",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4533,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "porta_time": 67.5951,
+  "porta_mode": "Legato",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.1938,
+  "fx_dist_mix": 0.6576
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4277
+  },
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.2003
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "l1_rate",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ],
+ "lfo_shapes": {
+  "1": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    0.1,
+    1,
+    -0.8
+   ],
+   [
+    0.4,
+    0.0,
+    0.8
+   ],
+   [
+    0.55,
+    0.6,
+    -0.6
+   ],
+   [
+    1,
+    0,
+    0.6
+   ]
+  ]
+ }
+}

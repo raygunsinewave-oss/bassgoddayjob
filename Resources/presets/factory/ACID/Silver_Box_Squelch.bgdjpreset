@@ -1,0 +1,116 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Silver Box Squelch",
+ "bank": "ACID",
+ "author": "Raygun",
+ "description": "Acid bass for Acid.",
+ "tags": {
+  "genre": "Acid",
+  "character": "acid",
+  "key": "D#",
+  "bpm": 134,
+  "extra": [
+   "lush",
+   "playful"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Resonance",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.5572,
+  "bassmono_on": true,
+  "bassmono_freq": 104.0418,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.0325,
+  "oD_on": false,
+  "f1_on": true,
+  "f1_type": "Acid Ladder 303",
+  "f1_cutoff": 785.7625,
+  "f1_reso": 0.6862,
+  "f1_drive": 0.4651,
+  "f1_fat": 0.2,
+  "f1_key": 0.3,
+  "e1_att": 0.3,
+  "e1_dec": 404.3007,
+  "e1_sus": 0.7778,
+  "e1_rel": 87.6595,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 352.8449,
+  "e2_sus": 0.0,
+  "e2_rel": 60,
+  "porta_time": 49.4505,
+  "porta_mode": "Legato",
+  "porta_type": "Constant Time",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Soft Clip",
+  "fx_dist_drive": 0.3269,
+  "fx_dist_mix": 0.721,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Ping-Pong",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/8 D",
+  "fx_delay_sync_r": "1/16",
+  "fx_delay_feedback": 0.3099,
+  "fx_delay_mix": 0.1449
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.3666
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.1298
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_reso",
+   "amount": 0.1134
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "f1_reso",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

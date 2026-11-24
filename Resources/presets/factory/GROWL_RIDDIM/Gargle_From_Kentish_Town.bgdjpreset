@@ -1,0 +1,142 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Gargle From Kentish Town",
+ "bank": "GROWL & RIDDIM",
+ "author": "Raygun",
+ "description": "Growl bass for Brostep.",
+ "tags": {
+  "genre": "Brostep",
+  "character": "growl",
+  "key": "A#m",
+  "bpm": 146,
+  "extra": [
+   "bouncy",
+   "wide"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Wobble Rate",
+  "Space"
+ ],
+ "tables": {
+  "A": "Neuro Mid 1",
+  "B": "Square"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.303,
+  "bassmono_on": true,
+  "bassmono_freq": 123.9127,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 2,
+  "oA_detune": 0.1945,
+  "oA_pos": 0.4776,
+  "oA_warp": "Bend +/-",
+  "oA_warp_amt": 0.2274,
+  "oB_on": true,
+  "oB_level": 0.45,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_semi": 0,
+  "oB_oct": 1,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5883,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Phaser 8",
+  "f1_cutoff": 1249.3743,
+  "f1_reso": 0.4235,
+  "f1_drive": 0.3704,
+  "f1_fat": 0.4884,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 400,
+  "e1_sus": 1.0,
+  "e1_rel": 64.5993,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l1_shape": "Custom",
+  "l1_sync": true,
+  "l1_sync_rate": "1/8 T",
+  "l1_mode": "Trigger",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.4562,
+  "fx_dist_mix": 0.8443,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.5861,
+  "fx_dist_mb_high": 0.4126,
+  "fx_ott_on": true,
+  "fx_ott_depth": 0.9847,
+  "fx_ott_mix": 0.5907,
+  "porta_time": 29.113
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.3992
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4388
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "l1_rate",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ],
+ "lfo_shapes": {
+  "1": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    0.5,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ]
+  ]
+ }
+}

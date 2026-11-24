@@ -1,0 +1,105 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Peckham Tender",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Pluck bass for UK Bass.",
+ "tags": {
+  "genre": "UK Bass",
+  "character": "pluck",
+  "key": "A#m",
+  "bpm": 130,
+  "extra": [
+   "clean",
+   "hypnotic"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sine to Saw"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.1877,
+  "bassmono_on": true,
+  "bassmono_freq": 124.1184,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 4,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 2,
+  "oA_detune": 0.1108,
+  "oA_pos": 0.3582,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4585,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 1265.0543,
+  "f1_reso": 0.0621,
+  "f1_drive": 0.0,
+  "f1_fat": 0.4507,
+  "f1_key": 0.0,
+  "e1_att": 16.8962,
+  "e1_dec": 600,
+  "e1_sus": 0.7346,
+  "e1_rel": 334.3108,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.3486,
+  "fx_sat_warmth": 0.7027,
+  "fx_sat_wow": 0.1311,
+  "fx_sat_flutter": 0.0519,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Soft",
+  "fx_duck_depth": 0.5996,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.4411,
+  "fx_verb_decay": 1.3203,
+  "fx_verb_mix": 0.0972,
+  "drift": 0.2792
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

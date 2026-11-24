@@ -58,7 +58,7 @@ private:
 struct SharedSettings
 {
     juce::SharedResourcePointer<AppSettings> settings;
-    AppSettings* operator->() const { return settings.get(); }
-    AppSettings& operator*() const  { return *settings; }
+    AppSettings* operator->() const { return &settings.get(); }
+    AppSettings& operator*() const  { return settings.get(); }
 };
 } // namespace bgdj

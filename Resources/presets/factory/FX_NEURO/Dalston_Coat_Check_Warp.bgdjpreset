@@ -1,0 +1,116 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Dalston Coat Check Warp",
+ "bank": "FX & NEURO",
+ "author": "Raygun",
+ "description": "Texture bass for FX.",
+ "tags": {
+  "genre": "FX",
+  "character": "texture",
+  "key": "F#m",
+  "bpm": 124,
+  "extra": [
+   "dark",
+   "hypnotic"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Chaos",
+  "Space"
+ ],
+ "tables": {
+  "A": "Comb Sweep",
+  "C": "FM Metal 4"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2201,
+  "bassmono_on": true,
+  "bassmono_freq": 127.9764,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 2,
+  "oA_detune": 0.2,
+  "oA_warp": "Bend +",
+  "oA_warp_amt": 0.3586,
+  "oC_on": true,
+  "oC_level": 0.4,
+  "oC_uni": 1,
+  "oC_detune": 0.2,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Phaser 12",
+  "f1_cutoff": 1355.5826,
+  "f1_reso": 0.6974,
+  "f1_drive": 0.4,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 400,
+  "e1_sus": 1.0,
+  "e1_rel": 80,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l1_sync": true,
+  "l1_sync_rate": "1/16",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.6,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.8,
+  "fx_dist_mb_high": 0.5,
+  "fx_ott_on": true,
+  "fx_ott_depth": 0.8,
+  "fx_ott_mix": 0.5
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_warp_amt",
+   "amount": 0.2245
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.3666
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_warp_amt",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

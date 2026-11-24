@@ -1,0 +1,129 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "4AM Snap",
+ "bank": "TECH HOUSE RUBBER",
+ "author": "Raygun",
+ "description": "Pluck bass for Tech House.",
+ "tags": {
+  "genre": "Tech House",
+  "character": "pluck",
+  "key": "A#",
+  "bpm": 128,
+  "extra": [
+   "dark",
+   "rolling"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Pluck Length",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Bit Rubber",
+  "B": "Triangle"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3534,
+  "bassmono_on": true,
+  "bassmono_freq": 142.4869,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.2219,
+  "oB_on": true,
+  "oB_level": 0.4,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_oct": 1,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4535,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 712.2627,
+  "f1_reso": 0.2025,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.3,
+  "e1_dec": 321.7503,
+  "e1_sus": 0.4612,
+  "e1_rel": 49.3858,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.823,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 145.2273,
+  "e2_sus": 0.0,
+  "e2_rel": 80,
+  "porta_time": 20.5481,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Hard",
+  "fx_duck_depth": 0.6565,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.1651,
+  "fx_sat_warmth": 0.3259,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Ping-Pong",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/8 D",
+  "fx_delay_sync_r": "1/8 D",
+  "fx_delay_feedback": 0.25,
+  "fx_delay_mix": 0.0
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.3373
+  },
+  {
+   "src": "Env 2",
+   "dst": "oA_pos",
+   "amount": 0.2677
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.1137
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e2_dec",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

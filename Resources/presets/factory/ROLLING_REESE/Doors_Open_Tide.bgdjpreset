@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Doors Open Tide",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Rollers.",
+ "tags": {
+  "genre": "Rollers",
+  "character": "reese",
+  "key": "D#m",
+  "bpm": 173,
+  "extra": [
+   "bouncy",
+   "punchy"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Saw",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.208,
+  "bassmono_on": true,
+  "bassmono_freq": 107.5205,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 3,
+  "oA_detune": 0.4015,
+  "oA_blend": 0.691,
+  "oA_width": 0.6311,
+  "oA_pos": 0.4854,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.1657,
+  "oB_fine": 10.2306,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4319,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 630.8308,
+  "f1_reso": 0.2345,
+  "f1_drive": 0.0914,
+  "f1_fat": 0.4586,
+  "f1_key": 0.0,
+  "e1_att": 0.5969,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 83.0454,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 41.5003,
+  "l1_sync": true,
+  "l1_sync_rate": "2 Bars",
+  "l1_mode": "Free",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.2112,
+  "fx_mod_depth": 0.5542,
+  "fx_mod_mix": 0.2543
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.4216,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.0909,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

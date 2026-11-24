@@ -1,0 +1,110 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Midnight Corner Shop",
+ "bank": "BREAKS & JUNGLE",
+ "author": "Raygun",
+ "description": "Reese bass for Jungle.",
+ "tags": {
+  "genre": "Jungle",
+  "character": "reese",
+  "key": "E",
+  "bpm": 161,
+  "extra": [
+   "bouncy"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Mid Stack",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sine",
+  "B": "Hoover 1"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1875,
+  "bassmono_on": true,
+  "bassmono_freq": 149.1272,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oB_on": true,
+  "oB_level": 0.5,
+  "oB_uni": 2,
+  "oB_detune": 0.2194,
+  "oB_route": "Filter 1",
+  "oA_route": "Direct",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.2426,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "HP 12",
+  "f1_cutoff": 1418.9039,
+  "f1_reso": 0.3603,
+  "f1_drive": 0.3687,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 341.7648,
+  "e1_sus": 0.8175,
+  "e1_rel": 132.0706,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 69.3218,
+  "porta_mode": "Always",
+  "l1_sync": true,
+  "l1_sync_rate": "1/4",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.3278,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.6,
+  "fx_dist_mb_high": 0.3,
+  "fx_dist_mix": 0.7
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oB_pos",
+   "amount": 0.2063
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oB_level",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

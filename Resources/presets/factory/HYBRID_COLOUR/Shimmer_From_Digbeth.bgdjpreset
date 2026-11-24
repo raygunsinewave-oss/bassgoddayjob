@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Shimmer From Digbeth",
+ "bank": "HYBRID / COLOUR",
+ "author": "Raygun",
+ "description": "Fm bass for Colour Bass.",
+ "tags": {
+  "genre": "Colour Bass",
+  "character": "FM",
+  "key": "Em",
+  "bpm": 149,
+  "extra": [
+   "aggressive",
+   "bright"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Colour",
+  "Space"
+ ],
+ "tables": {
+  "A": "Chord Stack Major",
+  "B": "FM Metal 1"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.3672,
+  "bassmono_on": true,
+  "bassmono_freq": 119.8726,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 8,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 3,
+  "oA_detune": 0.2994,
+  "oA_width": 0.9,
+  "oA_pos": 0.6543,
+  "oB_on": true,
+  "oB_level": 0.4,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_oct": 1,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3672,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP/HP Morph",
+  "f1_cutoff": 4479.2499,
+  "f1_reso": 0.1625,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 12.4641,
+  "e1_dec": 600,
+  "e1_sus": 0.7998,
+  "e1_rel": 381.1689,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l2_sync": true,
+  "l2_sync_rate": "1/8",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Chorus",
+  "fx_mod_rate": 0.4214,
+  "fx_mod_depth": 0.3461,
+  "fx_mod_mix": 0.3577,
+  "fx_verb_on": true,
+  "fx_verb_type": "Hall",
+  "fx_verb_size": 0.5819,
+  "fx_verb_decay": 1.7517,
+  "fx_verb_mix": 0.1412,
+  "fx_hyper_on": true,
+  "fx_hyper_voices": 5,
+  "fx_hyper_detune": 0.3279,
+  "fx_hyper_mix": 0.4119,
+  "fx_hyper_mono_below": 150.0
+ },
+ "matrix": [
+  {
+   "src": "LFO 2",
+   "dst": "oA_pos",
+   "amount": 0.1012
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_pos",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

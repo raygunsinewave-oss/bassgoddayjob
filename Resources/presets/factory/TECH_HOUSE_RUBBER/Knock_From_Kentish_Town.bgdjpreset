@@ -1,0 +1,113 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Knock From Kentish Town",
+ "bank": "TECH HOUSE RUBBER",
+ "author": "Raygun",
+ "description": "Rubber bass for House.",
+ "tags": {
+  "genre": "House",
+  "character": "rubber",
+  "key": "F#m",
+  "bpm": 124,
+  "extra": [
+   "aggressive",
+   "bouncy"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Pluck Length",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Rubber Bounce"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3892,
+  "bassmono_on": true,
+  "bassmono_freq": 112.1681,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.6898,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4774,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 573.2227,
+  "f1_reso": 0.3375,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.3,
+  "e1_dec": 230.3486,
+  "e1_sus": 0.4245,
+  "e1_rel": 72.5038,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.6619,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 120.5675,
+  "e2_sus": 0.0,
+  "e2_rel": 80,
+  "porta_time": 5.7521,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Soft",
+  "fx_duck_depth": 0.8359
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.3413
+  },
+  {
+   "src": "Env 2",
+   "dst": "oA_pos",
+   "amount": 0.2211
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.098
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e2_dec",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

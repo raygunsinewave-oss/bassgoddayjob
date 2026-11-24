@@ -1,0 +1,110 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Last Orders Floor",
+ "bank": "SUB & 808",
+ "author": "Raygun",
+ "description": "Sub bass for Garage.",
+ "tags": {
+  "genre": "Garage",
+  "character": "sub",
+  "key": "G#",
+  "bpm": 134,
+  "extra": [
+   "dirty",
+   "tight"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Decay",
+  "Space"
+ ],
+ "tables": {
+  "A": "Rounded Square"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2259,
+  "bassmono_on": true,
+  "bassmono_freq": 117.5063,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.3204,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.327,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 4446.8813,
+  "f1_reso": 0.1,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 1.1534,
+  "e1_dec": 1503.8426,
+  "e1_sus": 0.0444,
+  "e1_rel": 230.3291,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.4482,
+  "e1_rcurve": 0.6,
+  "porta_time": 150.4295,
+  "porta_mode": "Always",
+  "e2_att": 0.5,
+  "e2_dec": 90.5058,
+  "e2_sus": 0.0,
+  "e2_rel": 60,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Asym",
+  "fx_dist_drive": 0.5335,
+  "fx_dist_mix": 0.8412,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.5327,
+  "fx_dist_mb_high": 0.374,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.2647,
+  "fx_sat_warmth": 0.5633
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "oA_coarse",
+   "amount": 0.0932
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_dec",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

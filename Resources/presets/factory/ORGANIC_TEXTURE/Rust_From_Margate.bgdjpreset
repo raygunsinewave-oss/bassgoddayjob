@@ -1,0 +1,124 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Rust From Margate",
+ "bank": "ORGANIC / TEXTURE",
+ "author": "Raygun",
+ "description": "Texture bass for Broken Beat.",
+ "tags": {
+  "genre": "Broken Beat",
+  "character": "texture",
+  "key": "C#m",
+  "bpm": 116,
+  "extra": [
+   "smooth",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Texture",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Tape Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.4418,
+  "bassmono_on": true,
+  "bassmono_freq": 128.0172,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.6543,
+  "oA_rand": 1.0,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 29,
+  "oD_level": 0.1531,
+  "oD_noise_key": false,
+  "oD_route": "Filter 1",
+  "f1_on": true,
+  "f1_type": "BP 12",
+  "f1_cutoff": 850.8101,
+  "f1_reso": 0.366,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "f2_on": true,
+  "f2_type": "HP 12",
+  "f2_cutoff": 48.6332,
+  "f2_reso": 0.0,
+  "f2_drive": 0.0,
+  "f2_fat": 0.0,
+  "f2_key": 0.0,
+  "e1_att": 5.623,
+  "e1_dec": 534.3211,
+  "e1_sus": 0.8708,
+  "e1_rel": 364.2546,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "drift": 0.785,
+  "l3_sync": false,
+  "l3_rate": 0.1715,
+  "l3_shape": "Smooth Random",
+  "l3_mode": "Free",
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.1306,
+  "fx_sat_warmth": 0.6,
+  "fx_sat_wow": 0.4086,
+  "fx_sat_flutter": 0.2836,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Tape",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/4",
+  "fx_delay_sync_r": "1/4 D",
+  "fx_delay_feedback": 0.3173,
+  "fx_delay_wow": 0.4,
+  "fx_delay_mix": 0.1435
+ },
+ "matrix": [
+  {
+   "src": "LFO 3",
+   "dst": "oA_pos",
+   "amount": 0.3158
+  },
+  {
+   "src": "Note Random",
+   "dst": "f1_cutoff",
+   "amount": 0.1187
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oD_level",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

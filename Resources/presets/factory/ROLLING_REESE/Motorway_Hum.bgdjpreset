@@ -1,0 +1,126 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Motorway Hum",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Rollers.",
+ "tags": {
+  "genre": "Rollers",
+  "character": "reese",
+  "key": "D#m",
+  "bpm": 174,
+  "extra": [
+   "bright",
+   "gritty"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Reese Stack 5",
+  "B": "Reese Stack 1"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.239,
+  "bassmono_on": true,
+  "bassmono_freq": 124.4689,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 2,
+  "oA_detune": 0.4398,
+  "oA_blend": 0.8789,
+  "oA_width": 0.5905,
+  "oA_pos": 0.3718,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.209,
+  "oB_fine": 3.6219,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4555,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 578.1959,
+  "f1_reso": 0.1729,
+  "f1_drive": 0.1697,
+  "f1_fat": 0.4797,
+  "f1_key": 0.0,
+  "e1_att": 6.8568,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 190.8984,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 71.3757,
+  "l1_sync": true,
+  "l1_sync_rate": "1/2",
+  "l1_mode": "Free",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.2831,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.6207,
+  "fx_dist_mb_high": 0.3934,
+  "fx_dist_mix": 0.5165,
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.2164,
+  "fx_mod_depth": 0.4547,
+  "fx_mod_mix": 0.2488
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.4125,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.0507,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

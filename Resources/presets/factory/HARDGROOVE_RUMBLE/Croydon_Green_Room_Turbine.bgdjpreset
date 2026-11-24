@@ -1,0 +1,113 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Croydon Green Room Turbine",
+ "bank": "HARDGROOVE / RUMBLE",
+ "author": "Raygun",
+ "description": "Rumble bass for Hypnotic Techno.",
+ "tags": {
+  "genre": "Hypnotic Techno",
+  "character": "rumble",
+  "key": "F#m",
+  "bpm": 130,
+  "extra": [
+   "hypnotic",
+   "playful"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Room Size",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sub Harmonic"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2744,
+  "bassmono_on": true,
+  "bassmono_freq": 109.4457,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 41,
+  "oD_level": 0.4387,
+  "oD_noise_key": true,
+  "oD_route": "Filter 1",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 277.2726,
+  "f1_reso": 0.2174,
+  "f1_drive": 0.3821,
+  "f1_fat": 0.6,
+  "f1_key": 0.0,
+  "e1_att": 6.6553,
+  "e1_dec": 889.6741,
+  "e1_sus": 0.318,
+  "e1_rel": 691.9432,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_verb_on": true,
+  "fx_verb_type": "Hall",
+  "fx_verb_size": 0.8726,
+  "fx_verb_decay": 7.3224,
+  "fx_verb_damp": 0.7163,
+  "fx_verb_mix": 0.2215,
+  "fx_verb_lowcut": 40.0,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Stereo",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/8",
+  "fx_delay_sync_r": "1/8 D",
+  "fx_delay_feedback": 0.5519,
+  "fx_delay_lp": 1500.0,
+  "fx_delay_mix": 0.193,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.3413,
+  "fx_dist_mix": 0.6,
+  "l1_sync": true,
+  "l1_sync_rate": "1/8"
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.1416
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "fx_verb_size",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

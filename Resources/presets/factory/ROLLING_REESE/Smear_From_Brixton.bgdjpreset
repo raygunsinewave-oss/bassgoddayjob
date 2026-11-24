@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Smear From Brixton",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Minimal Tech.",
+ "tags": {
+  "genre": "Minimal Tech",
+  "character": "reese",
+  "key": "Cm",
+  "bpm": 128,
+  "extra": [
+   "punchy",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Reese Stack 4",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1854,
+  "bassmono_on": true,
+  "bassmono_freq": 114.1926,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 7,
+  "oA_detune": 0.3839,
+  "oA_blend": 0.8982,
+  "oA_width": 0.8393,
+  "oA_pos": 0.3207,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.2668,
+  "oB_fine": 11.8802,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4369,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "MS-20 LP",
+  "f1_cutoff": 646.0366,
+  "f1_reso": 0.2404,
+  "f1_drive": 0.0809,
+  "f1_fat": 0.4688,
+  "f1_key": 0.0,
+  "e1_att": 2.3003,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 117.0256,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 33.248,
+  "l1_sync": true,
+  "l1_sync_rate": "1/2",
+  "l1_mode": "Free",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.1883,
+  "fx_mod_depth": 0.4926,
+  "fx_mod_mix": 0.2659
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.3912,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.106,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

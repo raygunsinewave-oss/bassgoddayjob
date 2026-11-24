@@ -1,0 +1,109 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Tottenham Multistorey Acid",
+ "bank": "ACID",
+ "author": "Raygun",
+ "description": "Acid bass for Acid House.",
+ "tags": {
+  "genre": "Acid House",
+  "character": "acid",
+  "key": "Em",
+  "bpm": 126,
+  "extra": [
+   "mono",
+   "wide"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Resonance",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Acid Squelch"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3586,
+  "bassmono_on": true,
+  "bassmono_freq": 103.9019,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.3401,
+  "oD_on": false,
+  "f1_on": true,
+  "f1_type": "Acid Ladder 303",
+  "f1_cutoff": 700.3596,
+  "f1_reso": 0.6447,
+  "f1_drive": 0.4187,
+  "f1_fat": 0.2,
+  "f1_key": 0.3,
+  "e1_att": 0.3,
+  "e1_dec": 434.8794,
+  "e1_sus": 0.3592,
+  "e1_rel": 53.6141,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 349.2755,
+  "e2_sus": 0.0,
+  "e2_rel": 60,
+  "porta_time": 72.2654,
+  "porta_mode": "Legato",
+  "porta_type": "Constant Time",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Soft Clip",
+  "fx_dist_drive": 0.5695,
+  "fx_dist_mix": 0.7356
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.3564
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.1633
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_reso",
+   "amount": 0.1075
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "f1_reso",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

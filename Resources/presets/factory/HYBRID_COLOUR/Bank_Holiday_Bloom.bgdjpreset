@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Bank Holiday Bloom",
+ "bank": "HYBRID / COLOUR",
+ "author": "Raygun",
+ "description": "Chord bass for Future Bass.",
+ "tags": {
+  "genre": "Future Bass",
+  "character": "chord",
+  "key": "G",
+  "bpm": 155,
+  "extra": [
+   "clean",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Colour",
+  "Space"
+ ],
+ "tables": {
+  "A": "Glass",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.1615,
+  "bassmono_on": true,
+  "bassmono_freq": 108.3613,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 6,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 5,
+  "oA_detune": 0.2314,
+  "oA_width": 0.9,
+  "oA_pos": 0.6959,
+  "oB_on": true,
+  "oB_level": 0.4,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_oct": 1,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3866,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Dual BP",
+  "f1_cutoff": 4223.7142,
+  "f1_reso": 0.2364,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 8.107,
+  "e1_dec": 600,
+  "e1_sus": 0.8997,
+  "e1_rel": 434.7827,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l2_sync": true,
+  "l2_sync_rate": "1/4",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Chorus",
+  "fx_mod_rate": 0.4743,
+  "fx_mod_depth": 0.522,
+  "fx_mod_mix": 0.2118,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.5094,
+  "fx_verb_decay": 2.8436,
+  "fx_verb_mix": 0.1297,
+  "fx_hyper_on": true,
+  "fx_hyper_voices": 5,
+  "fx_hyper_detune": 0.2814,
+  "fx_hyper_mix": 0.4201,
+  "fx_hyper_mono_below": 150.0
+ },
+ "matrix": [
+  {
+   "src": "LFO 2",
+   "dst": "oA_pos",
+   "amount": 0.1163
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_pos",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

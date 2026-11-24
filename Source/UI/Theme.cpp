@@ -1,4 +1,5 @@
 #include "Theme.h"
+#include <juce_audio_utils/juce_audio_utils.h>
 #include "../Common/Parameters.h"
 
 namespace bgdj

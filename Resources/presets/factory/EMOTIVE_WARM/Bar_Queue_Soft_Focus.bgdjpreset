@@ -1,0 +1,105 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Bar Queue Soft Focus",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Pluck bass for UK Bass.",
+ "tags": {
+  "genre": "UK Bass",
+  "character": "pluck",
+  "key": "Fm",
+  "bpm": 132,
+  "extra": [
+   "dark",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sweet Spot"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.2124,
+  "bassmono_on": true,
+  "bassmono_freq": 125.3391,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 4,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 2,
+  "oA_detune": 0.1602,
+  "oA_pos": 0.534,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5565,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 1632.6601,
+  "f1_reso": 0.1638,
+  "f1_drive": 0.0,
+  "f1_fat": 0.421,
+  "f1_key": 0.0,
+  "e1_att": 9.4907,
+  "e1_dec": 600,
+  "e1_sus": 0.9523,
+  "e1_rel": 171.9467,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.285,
+  "fx_sat_warmth": 0.7684,
+  "fx_sat_wow": 0.1553,
+  "fx_sat_flutter": 0.1371,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Soft",
+  "fx_duck_depth": 0.7782,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.5663,
+  "fx_verb_decay": 1.8766,
+  "fx_verb_mix": 0.1225,
+  "drift": 0.289
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Croydon Memory",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Warm bass for Melodic House.",
+ "tags": {
+  "genre": "Melodic House",
+  "character": "warm",
+  "key": "G#m",
+  "bpm": 120,
+  "extra": [
+   "mono",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Velvet Saw"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.3862,
+  "bassmono_on": true,
+  "bassmono_freq": 125.228,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 4,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 2,
+  "oA_detune": 0.1045,
+  "oA_pos": 0.269,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5206,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 1012.7779,
+  "f1_reso": 0.1518,
+  "f1_drive": 0.0,
+  "f1_fat": 0.489,
+  "f1_key": 0.0,
+  "e1_att": 4.7664,
+  "e1_dec": 600,
+  "e1_sus": 0.7967,
+  "e1_rel": 295.9152,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.3554,
+  "fx_sat_warmth": 0.7837,
+  "fx_sat_wow": 0.1854,
+  "fx_sat_flutter": 0.0063,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Long Pump",
+  "fx_duck_depth": 0.5036,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.4959,
+  "fx_verb_decay": 1.5135,
+  "fx_verb_mix": 0.0835,
+  "drift": 0.3199
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

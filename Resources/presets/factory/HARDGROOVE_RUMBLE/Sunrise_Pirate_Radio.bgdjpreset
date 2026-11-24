@@ -1,0 +1,113 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Sunrise Pirate Radio",
+ "bank": "HARDGROOVE / RUMBLE",
+ "author": "Raygun",
+ "description": "Rumble bass for Techno.",
+ "tags": {
+  "genre": "Techno",
+  "character": "rumble",
+  "key": "A#m",
+  "bpm": 128,
+  "extra": [
+   "dark",
+   "dirty"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Room Size",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sub Harmonic"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3695,
+  "bassmono_on": true,
+  "bassmono_freq": 114.9017,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 17,
+  "oD_level": 0.3155,
+  "oD_noise_key": true,
+  "oD_route": "Filter 1",
+  "f1_on": true,
+  "f1_type": "LP 36",
+  "f1_cutoff": 266.2941,
+  "f1_reso": 0.283,
+  "f1_drive": 0.2251,
+  "f1_fat": 0.6,
+  "f1_key": 0.0,
+  "e1_att": 5.1893,
+  "e1_dec": 1012.0336,
+  "e1_sus": 0.5337,
+  "e1_rel": 599.0374,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_verb_on": true,
+  "fx_verb_type": "Club",
+  "fx_verb_size": 0.6082,
+  "fx_verb_decay": 5.0252,
+  "fx_verb_damp": 0.7334,
+  "fx_verb_mix": 0.2884,
+  "fx_verb_lowcut": 40.0,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Stereo",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/8",
+  "fx_delay_sync_r": "1/8 D",
+  "fx_delay_feedback": 0.5505,
+  "fx_delay_lp": 1500.0,
+  "fx_delay_mix": 0.1683,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.3406,
+  "fx_dist_mix": 0.6,
+  "l1_sync": true,
+  "l1_sync_rate": "1/8"
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.1125
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "fx_verb_size",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

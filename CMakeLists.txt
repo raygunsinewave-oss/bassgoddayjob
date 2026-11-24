@@ -151,7 +151,7 @@ if(BGDJ_BUILD_TESTS)
     juce_add_console_app(BGDJ_Tests PRODUCT_NAME "BGDJ_Tests")
     target_sources(BGDJ_Tests PRIVATE ${BGDJ_CORE_SOURCES} Tests/TestMain.cpp Tests/DspTests.cpp Tests/EngineTests.cpp Tests/PresetTests.cpp Tests/SceneTests.cpp)
     target_include_directories(BGDJ_Tests PRIVATE Source)
-    target_compile_definitions(BGDJ_Tests PRIVATE ${BGDJ_COMMON_DEFS} JUCE_UNIT_TESTS=1 BGDJ_TESTS=1)
+    target_compile_definitions(BGDJ_Tests PRIVATE ${BGDJ_COMMON_DEFS} BGDJ_TESTS=1)
     target_link_libraries(BGDJ_Tests
         PRIVATE
             BGDJ_BinaryData

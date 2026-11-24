@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Nottingham Bloom",
+ "bank": "HYBRID / COLOUR",
+ "author": "Raygun",
+ "description": "Fm bass for Hybrid Trap.",
+ "tags": {
+  "genre": "Hybrid Trap",
+  "character": "FM",
+  "key": "C",
+  "bpm": 143,
+  "extra": [
+   "dark",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Colour",
+  "Space"
+ ],
+ "tables": {
+  "A": "Power Fifth",
+  "B": "Sync Sweep Saw"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.3023,
+  "bassmono_on": true,
+  "bassmono_freq": 112.9528,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 4,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 7,
+  "oA_detune": 0.2,
+  "oA_width": 0.9,
+  "oA_pos": 0.7485,
+  "oB_on": true,
+  "oB_level": 0.4,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_oct": 1,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4713,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 1840.5732,
+  "f1_reso": 0.2877,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 2.4764,
+  "e1_dec": 600,
+  "e1_sus": 0.978,
+  "e1_rel": 413.3168,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l2_sync": true,
+  "l2_sync_rate": "1/8",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Chorus",
+  "fx_mod_rate": 0.652,
+  "fx_mod_depth": 0.4191,
+  "fx_mod_mix": 0.2447,
+  "fx_verb_on": true,
+  "fx_verb_type": "Hall",
+  "fx_verb_size": 0.6128,
+  "fx_verb_decay": 2.8242,
+  "fx_verb_mix": 0.2465,
+  "fx_hyper_on": true,
+  "fx_hyper_voices": 5,
+  "fx_hyper_detune": 0.2291,
+  "fx_hyper_mix": 0.3076,
+  "fx_hyper_mono_below": 150.0
+ },
+ "matrix": [
+  {
+   "src": "LFO 2",
+   "dst": "oA_pos",
+   "amount": 0.1492
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_pos",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

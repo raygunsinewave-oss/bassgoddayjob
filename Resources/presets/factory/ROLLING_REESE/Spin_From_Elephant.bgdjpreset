@@ -1,0 +1,126 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Spin From Elephant",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Jungle.",
+ "tags": {
+  "genre": "Jungle",
+  "character": "reese",
+  "key": "Am",
+  "bpm": 166,
+  "extra": [
+   "warm",
+   "wide"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Reese Stack 4",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1539,
+  "bassmono_on": true,
+  "bassmono_freq": 103.5183,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 5,
+  "oA_detune": 0.2865,
+  "oA_blend": 0.701,
+  "oA_width": 0.8596,
+  "oA_pos": 0.4777,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.186,
+  "oB_fine": -3.2069,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4896,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Dirty LP 24",
+  "f1_cutoff": 548.08,
+  "f1_reso": 0.2107,
+  "f1_drive": 0.1033,
+  "f1_fat": 0.3813,
+  "f1_key": 0.0,
+  "e1_att": 5.2975,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 182.4431,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 69.4087,
+  "l1_sync": true,
+  "l1_sync_rate": "1/2",
+  "l1_mode": "Free",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.2942,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.4388,
+  "fx_dist_mb_high": 0.2111,
+  "fx_dist_mix": 0.7592,
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.079,
+  "fx_mod_depth": 0.5714,
+  "fx_mod_mix": 0.2348
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.3228,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.0662,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

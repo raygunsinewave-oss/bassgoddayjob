@@ -1,6 +1,7 @@
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
 #include "Presets/PresetManager.h"
+#include "Settings/Diagnostics.h"
 
 namespace bgdj
 {
@@ -42,6 +43,7 @@ BassGodsProcessor::BassGodsProcessor()
     midiMapFromVar (juce::JSON::parse (settings->getString ("midiMap")));
     analyzersEnabled = settings->analyzersEnabled();
 
+    diagnostics::installCrashHandlerIfEnabled (wrapperType == wrapperType_Standalone);
     hostName = juce::PluginHostType().getHostDescription();
     AppSettings::log ("Plugin instance created in host: " + hostName + " (" + juce::String (getWrapperTypeDescription (wrapperType)) + ")");
     startTimerHz (20);
@@ -168,6 +170,11 @@ void BassGodsProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::Mi
     }
 
     keyboardState.processNextMidiBuffer (midi, 0, total, true);
+    {
+        UiMidi u;
+        while (uiMidi.pop (u))
+            midi.addEvent (juce::MidiMessage (u.b[0], u.b[1], u.b[2]), 0);
+    }
     handleMidiLearn (midi);
 
     // ---- host transport ---------------------------------------------------------------------

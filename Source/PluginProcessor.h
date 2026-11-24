@@ -102,6 +102,16 @@ public:
     std::atomic<double> uiBpm { 120.0 }, uiPpq { 0.0 };
     std::atomic<bool> uiPlaying { false };
 
+    // ---- on-screen controllers (mod wheel / pitch bend from the UI) -----------------------------------
+    struct UiMidi { juce::uint8 b[3]; };
+    void sendUiMidi (const juce::MidiMessage& m)
+    {
+        UiMidi u {};
+        for (int i = 0; i < std::min (3, m.getRawDataSize()); ++i) u.b[i] = m.getRawData()[i];
+        uiMidi.push (u);
+    }
+    SpscFifo<UiMidi, 256> uiMidi;
+
     // ---- scene SFX -----------------------------------------------------------------------------------------------------
     CrowdSfx crowdSfx;
 

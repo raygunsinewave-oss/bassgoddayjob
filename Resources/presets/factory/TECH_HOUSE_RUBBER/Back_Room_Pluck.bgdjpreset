@@ -1,0 +1,116 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Back Room Pluck",
+ "bank": "TECH HOUSE RUBBER",
+ "author": "Raygun",
+ "description": "Pluck bass for Minimal.",
+ "tags": {
+  "genre": "Minimal",
+  "character": "pluck",
+  "key": "G#m",
+  "bpm": 128,
+  "extra": [
+   "tight",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Pluck Length",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Rubber 3"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2754,
+  "bassmono_on": true,
+  "bassmono_freq": 113.086,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.3529,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5009,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 453.1217,
+  "f1_reso": 0.3037,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.3,
+  "e1_dec": 180.7289,
+  "e1_sus": 0.102,
+  "e1_rel": 119.7137,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.7612,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 219.7234,
+  "e2_sus": 0.0,
+  "e2_rel": 80,
+  "porta_time": 19.0744,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Soft",
+  "fx_duck_depth": 0.6388,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.3241,
+  "fx_sat_warmth": 0.3298
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.484
+  },
+  {
+   "src": "Env 2",
+   "dst": "oA_pos",
+   "amount": 0.2396
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.1014
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e2_dec",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

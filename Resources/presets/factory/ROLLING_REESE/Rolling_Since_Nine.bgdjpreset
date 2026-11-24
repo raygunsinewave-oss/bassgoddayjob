@@ -1,0 +1,126 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Rolling Since Nine",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Jungle.",
+ "tags": {
+  "genre": "Jungle",
+  "character": "reese",
+  "key": "Fm",
+  "bpm": 164,
+  "extra": [
+   "mono",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Saw",
+  "B": "Reese Stack 1"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2008,
+  "bassmono_on": true,
+  "bassmono_freq": 132.053,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 5,
+  "oA_detune": 0.352,
+  "oA_blend": 0.6769,
+  "oA_width": 0.5678,
+  "oA_pos": 0.5832,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.18,
+  "oB_fine": -9.6876,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4223,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "MS-20 LP",
+  "f1_cutoff": 649.3532,
+  "f1_reso": 0.2208,
+  "f1_drive": 0.0765,
+  "f1_fat": 0.2517,
+  "f1_key": 0.0,
+  "e1_att": 2.9195,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 155.5839,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 27.8275,
+  "l1_sync": true,
+  "l1_sync_rate": "2 Bars",
+  "l1_mode": "Free",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.2336,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.5887,
+  "fx_dist_mb_high": 0.229,
+  "fx_dist_mix": 0.7617,
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.2554,
+  "fx_mod_depth": 0.5879,
+  "fx_mod_mix": 0.1741
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.224,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.1227,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

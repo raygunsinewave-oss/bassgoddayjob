@@ -1,0 +1,110 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Pirate Aerial Wobble",
+ "bank": "BREAKS & JUNGLE",
+ "author": "Raygun",
+ "description": "Reese bass for UK Hardcore.",
+ "tags": {
+  "genre": "UK Hardcore",
+  "character": "reese",
+  "key": "C#m",
+  "bpm": 147,
+  "extra": [
+   "mono"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Mid Stack",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sine",
+  "B": "Reese Stack 1"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1989,
+  "bassmono_on": true,
+  "bassmono_freq": 102.9906,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oB_on": true,
+  "oB_level": 0.5,
+  "oB_uni": 2,
+  "oB_detune": 0.2372,
+  "oB_route": "Filter 1",
+  "oA_route": "Direct",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3328,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "HP 12",
+  "f1_cutoff": 1407.4009,
+  "f1_reso": 0.3184,
+  "f1_drive": 0.2471,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 356.5837,
+  "e1_sus": 0.7515,
+  "e1_rel": 107.0109,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 35.2008,
+  "porta_mode": "Always",
+  "l1_sync": true,
+  "l1_sync_rate": "1/2",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.2335,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.6,
+  "fx_dist_mb_high": 0.3,
+  "fx_dist_mix": 0.7
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oB_pos",
+   "amount": 0.2422
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oB_level",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Sunrise Bus Stop",
+ "bank": "SUB & 808",
+ "author": "Raygun",
+ "description": "Sub bass for Grime.",
+ "tags": {
+  "genre": "Grime",
+  "character": "sub",
+  "key": "C",
+  "bpm": 140,
+  "extra": [
+   "hypnotic",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Decay",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sub Harmonic"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1955,
+  "bassmono_on": true,
+  "bassmono_freq": 103.1864,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.2149,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3313,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 2848.1477,
+  "f1_reso": 0.1,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 1.2893,
+  "e1_dec": 1133.1234,
+  "e1_sus": 0.0418,
+  "e1_rel": 435.826,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5946,
+  "e1_rcurve": 0.6,
+  "porta_time": 117.9118,
+  "porta_mode": "Always",
+  "e2_att": 0.5,
+  "e2_dec": 89.9518,
+  "e2_sus": 0.0,
+  "e2_rel": 60,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.5699,
+  "fx_dist_mix": 0.7389,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.782,
+  "fx_dist_mb_high": 0.4864,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.3716,
+  "fx_sat_warmth": 0.4674
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "oA_coarse",
+   "amount": 0.0793
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_dec",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

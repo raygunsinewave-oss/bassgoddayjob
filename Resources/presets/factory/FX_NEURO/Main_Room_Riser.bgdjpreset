@@ -1,0 +1,106 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Main Room Riser",
+ "bank": "FX & NEURO",
+ "author": "Raygun",
+ "description": "Fm bass for Neurofunk.",
+ "tags": {
+  "genre": "Neurofunk",
+  "character": "FM",
+  "key": "Gm",
+  "bpm": 175,
+  "extra": [
+   "bright",
+   "rolling"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Chaos",
+  "Space"
+ ],
+ "tables": {
+  "A": "Fizz"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3137,
+  "bassmono_on": true,
+  "bassmono_freq": 141.1574,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 5,
+  "oA_detune": 0.3,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 0,
+  "oD_level": 0.3,
+  "oD_noise_key": false,
+  "oD_route": "Filter 1",
+  "e1_att": 4750.4642,
+  "e1_dec": 1000,
+  "e1_sus": 1.0,
+  "e1_rel": 500,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "e3_att": 3346.716,
+  "e3_dec": 1000,
+  "e3_sus": 1.0,
+  "e3_rel": 300,
+  "f1_on": true,
+  "f1_type": "HP 12",
+  "f1_cutoff": 150.0,
+  "f1_reso": 0.3,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "fx_verb_on": true,
+  "fx_verb_type": "Hall",
+  "fx_verb_size": 0.8,
+  "fx_verb_decay": 4.0,
+  "fx_verb_mix": 0.3
+ },
+ "matrix": [
+  {
+   "src": "Env 3",
+   "dst": "oA_coarse",
+   "amount": 0.2049
+  },
+  {
+   "src": "Env 3",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_warp_amt",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

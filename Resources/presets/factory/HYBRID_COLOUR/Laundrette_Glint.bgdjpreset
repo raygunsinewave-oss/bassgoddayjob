@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Laundrette Glint",
+ "bank": "HYBRID / COLOUR",
+ "author": "Raygun",
+ "description": "Chord bass for Future Bass.",
+ "tags": {
+  "genre": "Future Bass",
+  "character": "chord",
+  "key": "D#m",
+  "bpm": 141,
+  "extra": [
+   "gritty",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Colour",
+  "Space"
+ ],
+ "tables": {
+  "A": "Power Fifth",
+  "B": "Saw"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.2339,
+  "bassmono_on": true,
+  "bassmono_freq": 130.7569,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 6,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 7,
+  "oA_detune": 0.2788,
+  "oA_width": 0.9,
+  "oA_pos": 0.829,
+  "oB_on": true,
+  "oB_level": 0.4,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_oct": 1,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4123,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Phaser 4",
+  "f1_cutoff": 2876.9497,
+  "f1_reso": 0.2532,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 3.1696,
+  "e1_dec": 600,
+  "e1_sus": 0.7218,
+  "e1_rel": 370.8488,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l2_sync": true,
+  "l2_sync_rate": "1/2",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Chorus",
+  "fx_mod_rate": 0.5655,
+  "fx_mod_depth": 0.396,
+  "fx_mod_mix": 0.3776,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.7211,
+  "fx_verb_decay": 2.1427,
+  "fx_verb_mix": 0.1313,
+  "fx_hyper_on": true,
+  "fx_hyper_voices": 5,
+  "fx_hyper_detune": 0.2099,
+  "fx_hyper_mix": 0.3576,
+  "fx_hyper_mono_below": 150.0
+ },
+ "matrix": [
+  {
+   "src": "LFO 2",
+   "dst": "oA_pos",
+   "amount": 0.2692
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_pos",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

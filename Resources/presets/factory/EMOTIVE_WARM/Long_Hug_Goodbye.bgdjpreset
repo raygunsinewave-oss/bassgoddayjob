@@ -1,0 +1,104 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Long Hug Goodbye",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Pluck bass for UK Bass.",
+ "tags": {
+  "genre": "UK Bass",
+  "character": "pluck",
+  "key": "F#m",
+  "bpm": 135,
+  "extra": [
+   "dirty",
+   "punchy"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Choir Formant"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3684,
+  "bassmono_on": true,
+  "bassmono_freq": 143.821,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 3,
+  "oA_detune": 0.1536,
+  "oA_pos": 0.4916,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4751,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 1730.3371,
+  "f1_reso": 0.0961,
+  "f1_drive": 0.0,
+  "f1_fat": 0.364,
+  "f1_key": 0.0,
+  "e1_att": 3.932,
+  "e1_dec": 600,
+  "e1_sus": 0.7034,
+  "e1_rel": 561.4549,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.374,
+  "fx_sat_warmth": 0.5989,
+  "fx_sat_wow": 0.1447,
+  "fx_sat_flutter": 0.0736,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Soft",
+  "fx_duck_depth": 0.5647,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.4102,
+  "fx_verb_decay": 2.1107,
+  "fx_verb_mix": 0.0949,
+  "drift": 0.1471
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

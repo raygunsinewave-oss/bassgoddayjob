@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+    <title>BASSGODSDAYJOB @VERSION@</title>
+    <welcome file="welcome.txt"/>
+    <license file="license.txt"/>
+    <options customize="allow" require-scripts="false" hostArchitectures="arm64,x86_64"/>
+    <volume-check><allowed-os-versions><os-version min="11.0"/></allowed-os-versions></volume-check>
+    <choices-outline>
+        <line choice="vst3"/>
+        <line choice="au"/>
+        <line choice="app"/>
+        <line choice="docs"/>
+    </choices-outline>
+    <choice id="vst3" title="VST3 plug-in"><pkg-ref id="com.raygun.bassgodsdayjob.vst3"/></choice>
+    <choice id="au" title="Audio Unit plug-in"><pkg-ref id="com.raygun.bassgodsdayjob.au"/></choice>
+    <choice id="app" title="Standalone application"><pkg-ref id="com.raygun.bassgodsdayjob.app"/></choice>
+    <choice id="docs" title="User manual"><pkg-ref id="com.raygun.bassgodsdayjob.docs"/></choice>
+    <pkg-ref id="com.raygun.bassgodsdayjob.vst3">vst3.pkg</pkg-ref>
+    <pkg-ref id="com.raygun.bassgodsdayjob.au">au.pkg</pkg-ref>
+    <pkg-ref id="com.raygun.bassgodsdayjob.app">app.pkg</pkg-ref>
+    <pkg-ref id="com.raygun.bassgodsdayjob.docs">docs.pkg</pkg-ref>
+</installer-gui-script>

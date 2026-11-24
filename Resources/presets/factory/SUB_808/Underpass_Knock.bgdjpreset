@@ -1,0 +1,100 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Underpass Knock",
+ "bank": "SUB & 808",
+ "author": "Raygun",
+ "description": "808 bass for Drill.",
+ "tags": {
+  "genre": "Drill",
+  "character": "808",
+  "key": "E",
+  "bpm": 140,
+  "extra": [
+   "dark",
+   "rolling"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Decay",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sub Harmonic"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3173,
+  "bassmono_on": true,
+  "bassmono_freq": 103.0046,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.1983,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.2314,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 2577.4832,
+  "f1_reso": 0.1,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.4792,
+  "e1_dec": 1640.5829,
+  "e1_sus": 0.1216,
+  "e1_rel": 231.4983,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.4717,
+  "e1_rcurve": 0.6,
+  "porta_time": 158.8614,
+  "porta_mode": "Always",
+  "e2_att": 0.5,
+  "e2_dec": 86.4142,
+  "e2_sus": 0.0,
+  "e2_rel": 60
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "oA_coarse",
+   "amount": 0.1537
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_dec",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

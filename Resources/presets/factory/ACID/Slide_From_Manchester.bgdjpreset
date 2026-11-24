@@ -1,0 +1,109 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Slide From Manchester",
+ "bank": "ACID",
+ "author": "Raygun",
+ "description": "Acid bass for Acid Techno.",
+ "tags": {
+  "genre": "Acid Techno",
+  "character": "acid",
+  "key": "Gm",
+  "bpm": 141,
+  "extra": [
+   "dark",
+   "playful"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Resonance",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Acid Square"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.4277,
+  "bassmono_on": true,
+  "bassmono_freq": 130.5936,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.5128,
+  "oD_on": false,
+  "f1_on": true,
+  "f1_type": "Acid Ladder 303",
+  "f1_cutoff": 538.6712,
+  "f1_reso": 0.688,
+  "f1_drive": 0.4647,
+  "f1_fat": 0.2,
+  "f1_key": 0.3,
+  "e1_att": 0.3,
+  "e1_dec": 212.5869,
+  "e1_sus": 0.3692,
+  "e1_rel": 72.8435,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 385.5225,
+  "e2_sus": 0.0,
+  "e2_rel": 60,
+  "porta_time": 66.3461,
+  "porta_mode": "Legato",
+  "porta_type": "Constant Time",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.305,
+  "fx_dist_mix": 0.6081
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.3425
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.1949
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_reso",
+   "amount": 0.0943
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "f1_reso",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

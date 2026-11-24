@@ -1,0 +1,124 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Moss From Cardiff",
+ "bank": "ORGANIC / TEXTURE",
+ "author": "Raygun",
+ "description": "Texture bass for Folktronica.",
+ "tags": {
+  "genre": "Folktronica",
+  "character": "texture",
+  "key": "C",
+  "bpm": 108,
+  "extra": [
+   "dirty",
+   "wide"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Texture",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Harmonic Climb"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.154,
+  "bassmono_on": true,
+  "bassmono_freq": 118.7395,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.9199,
+  "oA_rand": 1.0,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 42,
+  "oD_level": 0.2311,
+  "oD_noise_key": true,
+  "oD_route": "Filter 1",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 2653.6065,
+  "f1_reso": 0.3168,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "f2_on": true,
+  "f2_type": "HP 12",
+  "f2_cutoff": 39.3652,
+  "f2_reso": 0.0,
+  "f2_drive": 0.0,
+  "f2_fat": 0.0,
+  "f2_key": 0.0,
+  "e1_att": 8.3001,
+  "e1_dec": 326.3661,
+  "e1_sus": 0.3481,
+  "e1_rel": 396.4242,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "drift": 0.8811,
+  "l3_sync": false,
+  "l3_rate": 0.3374,
+  "l3_shape": "Smooth Random",
+  "l3_mode": "Free",
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.1499,
+  "fx_sat_warmth": 0.6,
+  "fx_sat_wow": 0.4219,
+  "fx_sat_flutter": 0.3011,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Tape",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/4",
+  "fx_delay_sync_r": "1/4 D",
+  "fx_delay_feedback": 0.3277,
+  "fx_delay_wow": 0.4,
+  "fx_delay_mix": 0.1123
+ },
+ "matrix": [
+  {
+   "src": "LFO 3",
+   "dst": "oA_pos",
+   "amount": 0.3369
+  },
+  {
+   "src": "Note Random",
+   "dst": "f1_cutoff",
+   "amount": 0.1402
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oD_level",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

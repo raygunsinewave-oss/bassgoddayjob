@@ -1,0 +1,104 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Bank Holiday Tender",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Pluck bass for UK Bass.",
+ "tags": {
+  "genre": "UK Bass",
+  "character": "pluck",
+  "key": "Dm",
+  "bpm": 137,
+  "extra": [
+   "dirty",
+   "hypnotic"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sweet Spot"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2944,
+  "bassmono_on": true,
+  "bassmono_freq": 121.0337,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 2,
+  "oA_detune": 0.121,
+  "oA_pos": 0.597,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4737,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 684.1154,
+  "f1_reso": 0.0793,
+  "f1_drive": 0.0,
+  "f1_fat": 0.2726,
+  "f1_key": 0.0,
+  "e1_att": 4.7491,
+  "e1_dec": 600,
+  "e1_sus": 0.8797,
+  "e1_rel": 554.8685,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.2392,
+  "fx_sat_warmth": 0.5946,
+  "fx_sat_wow": 0.1312,
+  "fx_sat_flutter": 0.0693,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Long Pump",
+  "fx_duck_depth": 0.5106,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.4234,
+  "fx_verb_decay": 1.601,
+  "fx_verb_mix": 0.0987,
+  "drift": 0.3408
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Main Room Rinse",
+ "bank": "BREAKS & JUNGLE",
+ "author": "Raygun",
+ "description": "Reese bass for UK Hardcore.",
+ "tags": {
+  "genre": "UK Hardcore",
+  "character": "reese",
+  "key": "C#m",
+  "bpm": 143,
+  "extra": [
+   "tight",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Mid Stack",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sine",
+  "B": "Hoover 2"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3327,
+  "bassmono_on": true,
+  "bassmono_freq": 104.7435,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oB_on": true,
+  "oB_level": 0.5,
+  "oB_uni": 2,
+  "oB_detune": 0.2184,
+  "oB_route": "Filter 1",
+  "oA_route": "Direct",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3719,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Dirty BP",
+  "f1_cutoff": 982.9644,
+  "f1_reso": 0.3044,
+  "f1_drive": 0.1767,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.5,
+  "e1_dec": 390.0468,
+  "e1_sus": 0.9417,
+  "e1_rel": 89.3509,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 72.089,
+  "porta_mode": "Always",
+  "l1_sync": true,
+  "l1_sync_rate": "1/4",
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.2353,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.6,
+  "fx_dist_mb_high": 0.3,
+  "fx_dist_mix": 0.7
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oB_pos",
+   "amount": 0.2824
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oB_level",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Elephant Knock",
+ "bank": "TECH HOUSE RUBBER",
+ "author": "Raygun",
+ "description": "Rubber bass for Deep Tech.",
+ "tags": {
+  "genre": "Deep Tech",
+  "character": "rubber",
+  "key": "A",
+  "bpm": 123,
+  "extra": [
+   "aggressive",
+   "mono"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Pluck Length",
+  "Echo"
+ ],
+ "tables": {
+  "A": "Elastic"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3176,
+  "bassmono_on": true,
+  "bassmono_freq": 128.3019,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.6617,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5724,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Diode LP",
+  "f1_cutoff": 391.5081,
+  "f1_reso": 0.1537,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 0.3,
+  "e1_dec": 315.5326,
+  "e1_sus": 0.1969,
+  "e1_rel": 69.7584,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.6496,
+  "e1_rcurve": 0.5,
+  "e2_att": 0.3,
+  "e2_dec": 239.5541,
+  "e2_sus": 0.0,
+  "e2_rel": 80,
+  "porta_time": 10.9134,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Kick Duck Hard",
+  "fx_duck_depth": 0.6863
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "f1_cutoff",
+   "amount": 0.3427
+  },
+  {
+   "src": "Env 2",
+   "dst": "oA_pos",
+   "amount": 0.2235
+  },
+  {
+   "src": "Velocity",
+   "dst": "f1_cutoff",
+   "amount": 0.0707
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e2_dec",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_delay_mix",
+   "amount": 0.35
+  }
+ ]
+}

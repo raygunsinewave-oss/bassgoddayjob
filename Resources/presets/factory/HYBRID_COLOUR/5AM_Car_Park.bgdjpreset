@@ -1,0 +1,119 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "5AM Car Park",
+ "bank": "HYBRID / COLOUR",
+ "author": "Raygun",
+ "description": "Fm bass for Hybrid Trap.",
+ "tags": {
+  "genre": "Hybrid Trap",
+  "character": "FM",
+  "key": "C#",
+  "bpm": 140,
+  "extra": [
+   "punchy",
+   "warm"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Colour",
+  "Space"
+ ],
+ "tables": {
+  "A": "Bell",
+  "B": "Sync Sweep Saw"
+ },
+ "params": {
+  "poly_mode": "Poly",
+  "master_vol": -4.0,
+  "amp_vel": 0.4387,
+  "bassmono_on": true,
+  "bassmono_freq": 125.9681,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "poly_voices": 6,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 7,
+  "oA_detune": 0.2107,
+  "oA_width": 0.9,
+  "oA_pos": 0.8281,
+  "oB_on": true,
+  "oB_level": 0.4,
+  "oB_uni": 1,
+  "oB_detune": 0.2,
+  "oB_oct": 1,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4603,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 24",
+  "f1_cutoff": 4492.0044,
+  "f1_reso": 0.2038,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 6.27,
+  "e1_dec": 600,
+  "e1_sus": 0.7362,
+  "e1_rel": 240.9274,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "l2_sync": true,
+  "l2_sync_rate": "1/8",
+  "fx_mod_on": true,
+  "fx_mod_mode": "Chorus",
+  "fx_mod_rate": 0.6043,
+  "fx_mod_depth": 0.3486,
+  "fx_mod_mix": 0.2433,
+  "fx_verb_on": true,
+  "fx_verb_type": "Hall",
+  "fx_verb_size": 0.7461,
+  "fx_verb_decay": 2.5092,
+  "fx_verb_mix": 0.1284,
+  "fx_hyper_on": true,
+  "fx_hyper_voices": 5,
+  "fx_hyper_detune": 0.365,
+  "fx_hyper_mix": 0.4358,
+  "fx_hyper_mono_below": 150.0
+ },
+ "matrix": [
+  {
+   "src": "LFO 2",
+   "dst": "oA_pos",
+   "amount": 0.23
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_pos",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

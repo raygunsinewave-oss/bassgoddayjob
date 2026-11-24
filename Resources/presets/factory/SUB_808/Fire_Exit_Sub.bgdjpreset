@@ -1,0 +1,110 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Fire Exit Sub",
+ "bank": "SUB & 808",
+ "author": "Raygun",
+ "description": "808 bass for Grime.",
+ "tags": {
+  "genre": "Grime",
+  "character": "808",
+  "key": "Am",
+  "bpm": 140,
+  "extra": [
+   "gritty",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Decay",
+  "Space"
+ ],
+ "tables": {
+  "A": "Rounded Square"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.2386,
+  "bassmono_on": true,
+  "bassmono_freq": 143.7132,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.85,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.2995,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.3252,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 3265.6511,
+  "f1_reso": 0.1,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 1.8238,
+  "e1_dec": 2120.883,
+  "e1_sus": 0.2264,
+  "e1_rel": 345.4953,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.7085,
+  "e1_rcurve": 0.6,
+  "porta_time": 125.6312,
+  "porta_mode": "Always",
+  "e2_att": 0.5,
+  "e2_dec": 63.0328,
+  "e2_sus": 0.0,
+  "e2_rel": 60,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.3504,
+  "fx_dist_mix": 0.9869,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.5818,
+  "fx_dist_mb_high": 0.4497,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.3374,
+  "fx_sat_warmth": 0.4746
+ },
+ "matrix": [
+  {
+   "src": "Env 2",
+   "dst": "oA_coarse",
+   "amount": 0.1024
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_dec",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

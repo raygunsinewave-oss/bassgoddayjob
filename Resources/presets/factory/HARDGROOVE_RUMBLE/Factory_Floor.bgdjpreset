@@ -1,0 +1,113 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Factory Floor",
+ "bank": "HARDGROOVE / RUMBLE",
+ "author": "Raygun",
+ "description": "Rumble bass for Industrial.",
+ "tags": {
+  "genre": "Industrial",
+  "character": "rumble",
+  "key": "F#m",
+  "bpm": 134,
+  "extra": [
+   "clean",
+   "dark"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Room Size",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sub Harmonic"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.3444,
+  "bassmono_on": true,
+  "bassmono_freq": 114.008,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oD_on": true,
+  "oD_mode": "Noise",
+  "oD_noise_type": 2,
+  "oD_level": 0.3441,
+  "oD_noise_key": true,
+  "oD_route": "Filter 1",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 373.8155,
+  "f1_reso": 0.2942,
+  "f1_drive": 0.257,
+  "f1_fat": 0.6,
+  "f1_key": 0.0,
+  "e1_att": 6.1628,
+  "e1_dec": 623.4174,
+  "e1_sus": 0.471,
+  "e1_rel": 558.5814,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_verb_on": true,
+  "fx_verb_type": "Club",
+  "fx_verb_size": 0.8893,
+  "fx_verb_decay": 4.2341,
+  "fx_verb_damp": 0.7169,
+  "fx_verb_mix": 0.2654,
+  "fx_verb_lowcut": 40.0,
+  "fx_delay_on": true,
+  "fx_delay_mode": "Stereo",
+  "fx_delay_sync": true,
+  "fx_delay_sync_l": "1/8",
+  "fx_delay_sync_r": "1/8 D",
+  "fx_delay_feedback": 0.4632,
+  "fx_delay_lp": 1500.0,
+  "fx_delay_mix": 0.2335,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Tube",
+  "fx_dist_drive": 0.3421,
+  "fx_dist_mix": 0.6,
+  "l1_sync": true,
+  "l1_sync_rate": "1/8"
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.0826
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "fx_verb_size",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

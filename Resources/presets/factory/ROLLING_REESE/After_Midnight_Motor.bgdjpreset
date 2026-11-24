@@ -1,0 +1,129 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "After Midnight Motor",
+ "bank": "ROLLING & REESE",
+ "author": "Raygun",
+ "description": "Reese bass for Jungle.",
+ "tags": {
+  "genre": "Jungle",
+  "character": "reese",
+  "key": "Em",
+  "bpm": 170,
+  "extra": [
+   "gritty",
+   "smooth"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Detune",
+  "Space"
+ ],
+ "tables": {
+  "A": "Saw",
+  "B": "Tube Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1819,
+  "bassmono_on": true,
+  "bassmono_freq": 132.5236,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.7,
+  "oA_uni": 4,
+  "oA_detune": 0.3361,
+  "oA_blend": 0.6263,
+  "oA_width": 0.5366,
+  "oA_pos": 0.0598,
+  "oB_on": true,
+  "oB_level": 0.55,
+  "oB_uni": 2,
+  "oB_detune": 0.2008,
+  "oB_fine": -6.0045,
+  "oB_route": "Filter 1",
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4539,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "Ladder LP 24",
+  "f1_cutoff": 1413.9787,
+  "f1_reso": 0.2885,
+  "f1_drive": 0.2985,
+  "f1_fat": 0.4687,
+  "f1_key": 0.0,
+  "e1_att": 8.5963,
+  "e1_dec": 500,
+  "e1_sus": 1.0,
+  "e1_rel": 222.4532,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 43.2169,
+  "l1_sync": true,
+  "l1_sync_rate": "1 Bar",
+  "l1_mode": "Free",
+  "fx_ott_on": true,
+  "fx_ott_depth": 0.6306,
+  "fx_ott_mix": 0.2684,
+  "fx_dist_on": true,
+  "fx_dist_mode": "Multiband",
+  "fx_dist_drive": 0.2038,
+  "fx_dist_mb_low": 0.0,
+  "fx_dist_mb_mid": 0.6731,
+  "fx_dist_mb_high": 0.2014,
+  "fx_dist_mix": 0.7763,
+  "fx_mod_on": true,
+  "fx_mod_mode": "Phaser",
+  "fx_mod_rate": 0.2025,
+  "fx_mod_depth": 0.405,
+  "fx_mod_mix": 0.2928
+ },
+ "matrix": [
+  {
+   "src": "LFO 1",
+   "dst": "oA_pos",
+   "amount": 0.2676,
+   "bipolar": true
+  },
+  {
+   "src": "LFO 1",
+   "dst": "f1_cutoff",
+   "amount": 0.1141,
+   "bipolar": true
+  },
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_detune",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

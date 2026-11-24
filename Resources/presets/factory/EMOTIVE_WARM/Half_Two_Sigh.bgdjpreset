@@ -1,0 +1,104 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Half Two Sigh",
+ "bank": "EMOTIVE / WARM",
+ "author": "Raygun",
+ "description": "Warm bass for Emotive House.",
+ "tags": {
+  "genre": "Emotive House",
+  "character": "warm",
+  "key": "Bm",
+  "bpm": 124,
+  "extra": [
+   "lush",
+   "mono"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Tail",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sine to Saw"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1664,
+  "bassmono_on": true,
+  "bassmono_freq": 141.1937,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.75,
+  "oA_uni": 3,
+  "oA_detune": 0.1754,
+  "oA_pos": 0.4347,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.4242,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 686.6316,
+  "f1_reso": 0.0839,
+  "f1_drive": 0.0,
+  "f1_fat": 0.3188,
+  "f1_key": 0.0,
+  "e1_att": 27.2605,
+  "e1_dec": 600,
+  "e1_sus": 0.7397,
+  "e1_rel": 570.384,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "fx_sat_on": true,
+  "fx_sat_drive": 0.3909,
+  "fx_sat_warmth": 0.7906,
+  "fx_sat_wow": 0.1578,
+  "fx_sat_flutter": 0.0579,
+  "fx_duck_on": true,
+  "fx_duck_rate": "1/4",
+  "fx_duck_shape": "Long Pump",
+  "fx_duck_depth": 0.5462,
+  "fx_verb_on": true,
+  "fx_verb_type": "Plate",
+  "fx_verb_size": 0.5473,
+  "fx_verb_decay": 1.5145,
+  "fx_verb_mix": 0.129,
+  "drift": 0.2622
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "e1_rel",
+   "amount": 0.3
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "format": "bgdjpreset",
+ "version": 1,
+ "name": "Glide From Deptford",
+ "bank": "SUB & 808",
+ "author": "Raygun",
+ "description": "Sub bass for UK Bass.",
+ "tags": {
+  "genre": "UK Bass",
+  "character": "sub",
+  "key": "A#m",
+  "bpm": 132,
+  "extra": [
+   "aggressive",
+   "playful"
+  ]
+ },
+ "macros": [
+  "Cutoff",
+  "Drive",
+  "Harmonics",
+  "Space"
+ ],
+ "tables": {
+  "A": "Sine"
+ },
+ "params": {
+  "poly_mode": "Legato",
+  "master_vol": -4.0,
+  "amp_vel": 0.1938,
+  "bassmono_on": true,
+  "bassmono_freq": 120.3725,
+  "fx_lim_on": true,
+  "fx_util_on": true,
+  "oA_on": true,
+  "oA_level": 0.8,
+  "oA_uni": 1,
+  "oA_detune": 0.2,
+  "oA_pos": 0.1508,
+  "oD_on": true,
+  "oD_mode": "Sub",
+  "oD_sub_shape": "Sine",
+  "oD_sub_oct": -1,
+  "oD_level": 0.5362,
+  "oD_sub_lock": true,
+  "oD_route": "Direct",
+  "f1_on": true,
+  "f1_type": "LP 12",
+  "f1_cutoff": 635.2051,
+  "f1_reso": 0.05,
+  "f1_drive": 0.0,
+  "f1_fat": 0.0,
+  "f1_key": 0.0,
+  "e1_att": 3.6523,
+  "e1_dec": 400,
+  "e1_sus": 1.0,
+  "e1_rel": 143.2006,
+  "e1_acurve": 0.0,
+  "e1_dcurve": 0.5,
+  "e1_rcurve": 0.5,
+  "porta_time": 6.2953
+ },
+ "matrix": [
+  {
+   "src": "Macro 1",
+   "dst": "f1_cutoff",
+   "amount": 0.4
+  },
+  {
+   "src": "Macro 2",
+   "dst": "fx_dist_drive",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 2",
+   "dst": "f1_drive",
+   "amount": 0.35
+  },
+  {
+   "src": "Macro 3",
+   "dst": "oA_pos",
+   "amount": 0.5
+  },
+  {
+   "src": "Macro 4",
+   "dst": "fx_verb_mix",
+   "amount": 0.35
+  }
+ ]
+}
